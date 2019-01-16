@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/../bs_common_portal" />
+    <file type="web" url="file://$PROJECT_DIR$/../bs_parent_web" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/../bs_common_taskOfDeveloper1/pom.xml" />
+        <option value="$PROJECT_DIR$/../bs_common_portal/pom.xml" />
+        <option value="$PROJECT_DIR$/../bs_parent_chat/pom.xml" />
+        <option value="$PROJECT_DIR$/../bs_parent_common/pom.xml" />
+        <option value="$PROJECT_DIR$/../bs_parent_taskOfDeveloper1/pom.xml" />
+        <option value="$PROJECT_DIR$/../bs_parent_taskOfDeveloper2/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/../bs_common_chat/test1/pom.xml" />
+        <option value="$PROJECT_DIR$/../bs_common_chat/test2/pom.xml" />
+        <option value="$PROJECT_DIR$/../test1/pom.xml" />
+        <option value="$PROJECT_DIR$/../test2/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_10" project-jdk-name="10" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
