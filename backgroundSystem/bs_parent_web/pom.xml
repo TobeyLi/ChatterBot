@@ -24,13 +24,25 @@
     </properties>
 
     <dependencies>
-
         <dependency>
             <groupId>cn.edu.hust</groupId>
             <artifactId>bs_parent_taskOfDeveloper1</artifactId>
             <version>1.0-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>
+
+        <dependency>
+            <groupId>cn.edu.hust</groupId>
+            <artifactId>bs_parent_taskOfDeveloper2</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+
     </dependencies>
 
     <build>

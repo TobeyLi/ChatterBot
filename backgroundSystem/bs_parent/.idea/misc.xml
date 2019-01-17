@@ -4,6 +4,7 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/../bs_common_portal" />
     <file type="web" url="file://$PROJECT_DIR$/../bs_parent_web" />
+    <file type="web" url="file://$PROJECT_DIR$/../test1" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -19,10 +20,8 @@
     </option>
     <option name="ignoredFiles">
       <set>
-        <option value="$PROJECT_DIR$/../bs_common_chat/test1/pom.xml" />
-        <option value="$PROJECT_DIR$/../bs_common_chat/test2/pom.xml" />
+        <option value="$PROJECT_DIR$/test1/pom.xml" />
         <option value="$PROJECT_DIR$/../test1/pom.xml" />
-        <option value="$PROJECT_DIR$/../test2/pom.xml" />
       </set>
     </option>
   </component>

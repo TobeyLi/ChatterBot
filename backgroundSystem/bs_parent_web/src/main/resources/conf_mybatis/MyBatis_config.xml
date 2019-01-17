@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+    <settings>
+        <setting name="" value=""/>
+    </settings>
+
+    <!--整合ssm后，数据源等在spring的配置文件中有了，此处就不用配置了-->
+    <environments default="">
+        <environment id="">
+            <transactionManager type=""></transactionManager>
+            <dataSource type=""></dataSource>
+        </environment>
+    </environments>
+
+    <!--整合ssm后，不需要在这里写mapper.xml的位置-->
+    <mappers></mappers>
+</configuration>
