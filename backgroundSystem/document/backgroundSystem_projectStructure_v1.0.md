@@ -6,7 +6,7 @@
 
 ​	使用maven关系整个项目，在继承关系中，子项目继承父项目的依赖，将子项目作为父项目的模块，便于依赖的统一管理， 也便于父子项目的统一编译、打包和部署。
 
-![img](file:///C:/Users/hiram_he/AppData/Local/Temp/msohtmlclip1/01/clip_image002.png)
+![backgroundSystem_projectStructure](E:\ProcessOn\gongChengShiJian\20190117-后台系统结构\backgroundSystem_projectStructure.png)
 
 ​						图 2-1 项目结构的继承关系
 
@@ -14,7 +14,7 @@
 
 ​	一个子项目可以依赖其他子项目，从而实现分模块开发。依赖实现在子项目的pom.xml配置文件中以<dependency></denpendency>方式说明，且依赖关系可以传递。
 
-![img](file:///C:/Users/hiram_he/AppData/Local/Temp/msohtmlclip1/01/clip_image004.png)
+![backgroundSystem_projectStructure_dependency](E:\ProcessOn\gongChengShiJian\20190117-后台系统结构\backgroundSystem_projectStructure_dependency.png)
 
 ​								图 3-1 项目结构的依赖关系
 
