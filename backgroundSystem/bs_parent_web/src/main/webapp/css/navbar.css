@@ -1,0 +1,15 @@
+#box1 a{
+    text-decoration-line: none;
+}
+
+ul li{
+    list-style: none;
+}
+
+#box1 a span b{
+    float: right;
+}
+
+#box1 ul li{
+    display: none;
+}

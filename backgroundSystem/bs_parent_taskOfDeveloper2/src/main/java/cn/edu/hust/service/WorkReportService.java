@@ -11,4 +11,8 @@ import java.util.List;
 
 public interface WorkReportService {
     List<ChatDialog> queryAllDialog();
+    int getNumOfDialog();
+    int getNumOfBotAns();
+
+    int getNumOfUserInDialog();
 }

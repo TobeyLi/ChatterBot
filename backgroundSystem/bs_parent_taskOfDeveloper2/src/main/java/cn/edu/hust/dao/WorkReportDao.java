@@ -8,4 +8,10 @@ import java.util.List;
 public interface WorkReportDao {
     @Select("select * from chat_dialog")
     List<ChatDialog> queryAllDialog();
+
+    int getNumOfDialog();
+
+    int getNumOfBotAns();
+
+    int getNumOfUserInDialog();
 }

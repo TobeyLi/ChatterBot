@@ -5,14 +5,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Title</title>
+    <title>workReport</title>
 
-    <link  rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/bootstrap.min.css">
     <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/navbar.css">
+
     <script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery-3.3.1.js"></script>
     <script type="text/javascript" src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/js/navbar.js"></script>
 </head>
 <body>
 
@@ -60,32 +63,32 @@
                             </ul>
                         </li>--%>
                     </ul>
-                    <form class="navbar-form navbar-left" role="search" action="doSearch">
+                    <%--<form class="navbar-form navbar-left" role="search" action="doSearch">
                         <div class="form-group">
                             <input type="text" class="form-control" name="word4Search"/>
                         </div>
                         <button type="submit" class="btn btn-default">Submit</button>
-                    </form>
+                    </form>--%>
                     <ul class="nav navbar-nav navbar-right">
-                        <li>
+                        <%--<li>
                             <a href="#">Link</a>
-                        </li>
+                        </li>--%>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown<strong class="caret"></strong></a>
                             <ul class="dropdown-menu">
                                 <li>
                                     <a href="#">Action</a>
                                 </li>
-                                <li>
+                                <%--<li>
                                     <a href="#">Another action</a>
-                                </li>
-                                <li>
+                                </li>--%>
+                                <%--<li>
                                     <a href="#">Something else here</a>
-                                </li>
+                                </li>--%>
                                 <li class="divider">
                                 </li>
                                 <li>
-                                    <a href="#">Separated link</a>
+                                    <a href="#">logout</a>
                                 </li>
                             </ul>
                         </li>
@@ -103,14 +106,22 @@
                     <a href="#">工作报表</a>
                 </li>
                 <li>
-                    <a href="#">知识库</a>
+                    <a href="#">聊天信息</a>
                 </li>
                 <%--<li class="disabled">
                     <a href="#">用户管理</a>
                 </li>--%>
-                <li>
-                    <a href="#">用户管理</a>
+
+                <li id="box1">
+                    <a href="#">
+                        <span class="m">用户管理 <b>+</b></span>
+                    </a>
+                    <ul class='userManage_ul'>
+                        <li><a href="#"><span>信息查看</span></a></li>
+                        <li><a href="#"><span>信息管理</span></a></li>
+                    </ul>
                 </li>
+
                 <%--<li class="dropdown pull-left">
                     <a href="#" data-toggle="dropdown" class="dropdown-toggle">下拉<strong class="caret"></strong></a>
                     <ul class="dropdown-menu">
@@ -130,10 +141,10 @@
                         </li>
                     </ul>
                 </li>--%>
-                <li>
+                <li class="disabled">
                     <a href="#">操作流水</a>
                 </li>
-                <li>
+                <li class="disabled">
                     <a href="#">活跃度</a>
                 </li>
             </ul>
@@ -143,11 +154,11 @@
             <div class="tabbable" id="tabs-381221">
                 <ul class="nav nav-tabs">
                     <li class="active">
-                        <a href="#panel-909611" data-toggle="tab">Section 1</a>
+                        <a href="#panel-909611" data-toggle="tab">基础数据</a>
                     </li>
-                    <li>
+                    <%--<li>
                         <a href="#panel-748926" data-toggle="tab">Section 2</a>
-                    </li>
+                    </li>--%>
                 </ul>
                 <br/>
                 <div class="tab-content">
@@ -164,12 +175,12 @@
                                             <tr>
                                                 <td align="center">
                                                     <br/>
-                                                    <p>${dialogNum}</p>
+                                                    <p>${numOfDialog}</p>
                                                     <p>总会话量</p>
                                                     <hr/>
                                                     <p>
                                                         机器人会话量：
-                                                        <span>0</span>
+                                                        <span>${numOfBotAns}</span>
                                                     </p>
                                                 </td>
                                             </tr>
@@ -185,12 +196,16 @@
                                             <tr>
                                                 <td align="center">
                                                     <br/>
-                                                    <p>${dialogNum}</p>
-                                                    <p>总会话量</p>
+                                                    <p>${ratioOfSolved}</p>
+                                                    <p>问题解决率</p>
                                                     <hr/>
                                                     <p>
-                                                        机器人会话量：
-                                                        <span>0</span>
+                                                        已解决问题总量：
+                                                        <span>${numOfBotAns}</span>
+                                                    </p>
+                                                    <p>
+                                                        未解决问题总量：
+                                                        <span>${queOfUnResolved}</span>
                                                     </p>
                                                 </td>
                                             </tr>
@@ -201,28 +216,36 @@
 
                             <div class="col-md-4">
                                 <div class="thumbnail">
-                                    <img alt="300x200" src="http://ibootstrap-file.b0.upaiyun.com/lorempixel.com/600/200/sports/default.jpg" />
-                                    <div class="caption">
-                                        <h3>
-                                            Thumbnail label
-                                        </h3>
-                                        <p>
-                                            Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-                                        </p>
-                                        <p>
-                                            <a class="btn btn-primary" href="#">Action</a> <a class="btn" href="#">Action</a>
-                                        </p>
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <tr>
+                                                <td align="center">
+                                                    <br/>
+                                                    <p>${aveNumOfDialog4User}</p>
+                                                    <p>人均会话量</p>
+                                                    <hr/>
+                                                    <p>
+                                                        会话人次：
+                                                        <span>${NumOfUserInDialog}</span>
+                                                    </p>
+                                                    <p>
+                                                        总会话量：
+                                                        <span>${numOfDialog}</span>
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="tab-pane" id="panel-748926">
+                    <%--<div class="tab-pane" id="panel-748926">
                         <p>
                             Howdy, I'm in Section 2.
                         </p>
-                    </div>
+                    </div>--%>
 
                 </div>
             </div>

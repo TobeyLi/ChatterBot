@@ -17,4 +17,22 @@ public class WorkReportServiceImpl implements WorkReportService {
     public List<ChatDialog> queryAllDialog() {
         return workReportDao.queryAllDialog();
     }
+
+    public int getNumOfDialog() {
+        int num=0;
+        num=workReportDao.getNumOfDialog();
+        return num;
+    }
+
+    public int getNumOfBotAns() {
+        int numOfBotAns=0;
+        numOfBotAns=workReportDao.getNumOfBotAns();
+        return numOfBotAns;
+    }
+
+    public int getNumOfUserInDialog() {
+        int NumOfUserInDialog=0;
+        NumOfUserInDialog=workReportDao.getNumOfUserInDialog();
+        return NumOfUserInDialog;
+    }
 }

@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 
-<mapper namespace="cn.edu.hust.dao.LabelMapper">
+<mapper namespace="cn.edu.hust.dao.WorkReportDao">
+    
+    <select id="getNumOfDialog" resultType="Integer">
+        select count(*) from chat_dialog
+    </select>
+
+    <select id="getNumOfBotAns" resultType="Integer">
+        select count(*) from chat_dialog where responseMessage is not null
+    </select>
+
+    <select id="getNumOfUserInDialog" resultType="Integer">
+        select count(distinct userId) from chat_dialog
+    </select>
 </mapper>
