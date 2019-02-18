@@ -7,8 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c4061b6b-15e7-480c-bee9-ac2d67b7061f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bs_parent_common/src/main/java/cn/edu/hust/bean/ChatDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bs_parent_common/src/main/java/cn/edu/hust/bean/ChatDialog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bs_parent_common/src/main/java/cn/edu/hust/bean/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bs_parent_common/src/main/java/cn/edu/hust/bean/User.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/../bs_parent_common/target/" />
@@ -59,17 +59,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../bs_parent_common/src/main/java/cn/edu/hust/bean/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
+            <state relative-caret-position="1800">
               <caret line="78" column="29" selection-start-line="78" selection-start-column="29" selection-end-line="78" selection-end-column="29" />
               <folding>
                 <element signature="e#1093#1094#0" expanded="true" />
                 <element signature="e#1122#1123#0" expanded="true" />
                 <element signature="e#1166#1167#0" expanded="true" />
                 <element signature="e#1202#1203#0" expanded="true" />
+                <element signature="e#1568#1569#0" expanded="true" />
+                <element signature="e#1608#1609#0" expanded="true" />
+                <element signature="e#1640#1641#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../bs_parent_common/src/sql/chatterbot.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="34" column="45" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -124,15 +136,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="72">
               <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../bs_parent_web/src/main/java/cn/edu/hust/controller/WorkReportController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-792">
-              <caret line="6" column="13" lean-forward="true" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -276,171 +279,12 @@
           <expand>
             <path>
               <item name="bs_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bs_parent" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bs_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bs_parent_chat" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bs_parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="bs_parent_common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bs_parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="bs_parent_common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bs_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bs_parent_common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bs_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bs_parent_common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bs_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bs_parent_common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="bean" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bs_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bs_parent_taskOfDeveloper2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bs_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bs_parent_taskOfDeveloper2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bs_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bs_parent_taskOfDeveloper2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bs_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bs_parent_taskOfDeveloper2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bs_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bs_parent_taskOfDeveloper2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bs_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bs_parent_taskOfDeveloper2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bs_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bs_parent_taskOfDeveloper2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="serviceImpl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bs_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bs_parent_taskOfDeveloper2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bs_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bs_parent_taskOfDeveloper2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bs_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bs_parent_web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bs_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bs_parent_web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bs_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bs_parent_web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bs_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bs_parent_web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bs_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bs_parent_web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bs_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bs_parent_web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bs_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bs_parent_web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bs_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bs_parent_web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="fonts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bs_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bs_parent_web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bs_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bs_parent_web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -453,7 +297,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550457974538" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550458265173" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../bs_parent_taskOfDeveloper2/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -607,12 +451,12 @@
       <workItem from="1550310833395" duration="8605000" />
       <workItem from="1550324287433" duration="3689000" />
       <workItem from="1550372304690" duration="13712000" />
-      <workItem from="1550450082555" duration="4087000" />
+      <workItem from="1550450082555" duration="4389000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="137204000" />
+    <option name="totallyTimeSpent" value="137506000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -670,13 +514,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../bs_parent_chat/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../bs_parent_common/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -1028,14 +865,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../bs_parent_common/src/main/java/cn/edu/hust/bean/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
+        <state relative-caret-position="1800">
           <caret line="78" column="29" selection-start-line="78" selection-start-column="29" selection-end-line="78" selection-end-column="29" />
           <folding>
             <element signature="e#1093#1094#0" expanded="true" />
             <element signature="e#1122#1123#0" expanded="true" />
             <element signature="e#1166#1167#0" expanded="true" />
             <element signature="e#1202#1203#0" expanded="true" />
+            <element signature="e#1568#1569#0" expanded="true" />
+            <element signature="e#1608#1609#0" expanded="true" />
+            <element signature="e#1640#1641#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bs_parent_common/src/sql/chatterbot.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="34" column="45" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="45" />
         </state>
       </provider>
     </entry>
