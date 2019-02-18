@@ -7,7 +7,7 @@ public class User {
     private String password;
     private String realName;
     private String nickname;
-    private String sex;
+    private String gender;
     private String phoneNumber;
     private String email;
     private String rank;
@@ -52,12 +52,12 @@ public class User {
         this.nickname = nickname;
     }
 
-    public String getSex() {
-        return sex;
+    public String getGender() {
+        return gender;
     }
 
-    public void setSex(String sex) {
-        this.sex = sex;
+    public void setGender(String gender) {
+        this.gender = gender;
     }
 
     public String getPhoneNumber() {

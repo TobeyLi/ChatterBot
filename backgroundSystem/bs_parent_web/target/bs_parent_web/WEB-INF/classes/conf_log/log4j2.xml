@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- status="OFF"，可以去掉，它的含义为是否记录log4j2本身的event信息，默认是OFF -->
+<Configuration status="OFF" monitorInterval="60">
+
+
+    <Properties>
+        <!-- （*必须,各应用需要修改） 部署应用的名称,命名规则 :全部小写字母、中短横线、数字,与微服务命名,disconf中命名一致 -->
+        <property name="APPNAME">learn_log4j2_01</property>
+        <!-- （各应用需要修改）部署应用的端口号，用于一台服务器部署多台应用的情况,如果不需要，保持默认 -->
+        <property name="PORT">${sys:crtServerPort:-8080}</property>
+        <!-- （各应用需要修改）日志文件本地存放目录路径 建议各个环境跟生产环境统一起来,方便维护 -->
+        <property name="logBaseFolder">logs</property>
+        <!-- 日志文件名称的前缀部分，以下为建议值 -->
+        <property name="logFileNamePrefix">${APPNAME}</property>
+        <!-- 日志文件最小切割单位 值不做强制要求，建议300MB -->
+        <property name="every_file_size">300MB</property>
+        <!-- *必须并强制遵守 日志文件的编码 -->
+        <property name="log_charset">UTF-8</property>
+        <!-- *必须并强制遵守 日志格式说明： |日志时间|线程id|端口号|应用名称|类名|方法名|日志级别|traceId |输入参数|输出参数|耗时|任意多个扩展字段|具体打印的msg内容然后换行 -->
+        <property name="log_pattern">|%d{yyyy-MM-dd HH:mm:ss.SSS}|%t|${PORT}|${APPNAME}|%logger|%M|%p|%X{MDCCRT_GUID_TRACEID}|###+%X{MDCCRT_EXTENTS}-###|##+%X{MDCCRT_INPUT_PARAM}-##|##+%X{MDCCRT_OUTPUT_PARAM}-##|%X{MDCCRT_COST_TIME}|%m%n</property>
+    </Properties>
+
+
+    <!-- Define custom levels before using them for filtering below. -->
+    <CustomLevels>
+        <CustomLevel name="DIAG" intLevel="350" />
+        <CustomLevel name="NOTICE" intLevel="450" />
+        <CustomLevel name="VERBOSE" intLevel="550" />
+    </CustomLevels>
+
+
+    <!-- 创建日志文件 -->
+   <appenders>
+       <!--输出到控制台-->
+        <Console name="Console" target="SYSTEM_OUT">
+            <!--控制台只输出level及以上级别的信息（onMatch），其他的直接拒绝（onMismatch）-->
+            <ThresholdFilter level="info" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout pattern="[%d{yyyy-MM-dd HH:mm:ss} -- [%c %L] -- %m%n"/>
+        </Console>
+        <!-- append如果为FALSE，不追加到文件末尾，则新的内容会覆盖旧的日志信息 -->
+        <File name="MyFile" fileName="${logBaseFolder}/Log.log" append="TRUE">
+            <PatternLayout pattern="%d %-7level %logger{36} - %msg%n"/>
+        </File>
+		<!--输出到日志文件中-->
+        <RollingFile name="MyRollingFile" fileName="${logBaseFolder}/rollingLog.log" append="TRUE"
+                                                filePattern="${sys:user.home}/logs/$${date:yyyy-MM}/app-%d{MM-dd-yyyy}-%i.log.gz">
+            <PatternLayout pattern="%d %-7level %logger{36} - %msg%n" />
+            <!-- DefaultRolloverStrategy属性如不设置，则默认为最多同一文件夹下7个文件，这里设置了20 -->
+            <DefaultRolloverStrategy max="20"/>
+            <Filters>
+                <ThresholdFilter level="info" onMatch="ACCEPT" onMismatch="DENY"/>
+            </Filters>
+			<Policies>
+                <SizeBasedTriggeringPolicy size="2KB"/>
+            </Policies>
+        </RollingFile>
+
+        <!-- 以下是建议的日志压缩包目录的格式名称 -->
+        <!-- all File Config -->
+        <RollingRandomAccessFile name="allLog"
+                                    filePattern="${logBaseFolder}/%d{yyyy-MM-dd}/${logFileNamePrefix}-all-%d{yyyyMMdd-HH}.%i.log.gz"
+                                    fileName="${logBaseFolder}/all/${logFileNamePrefix}-all.log"
+                                    immediateFlush="false">
+            <!-- 日志输出格式 -->
+            <PatternLayout charset="${log_charset}" pattern="${log_pattern}" />
+            <!-- 以下是日志压缩包目录的建议格式名称 建议1天归档依次，压缩文件上线建议为200,这里预估每个磁盘存储空间200G左右，每个压缩包最大值200MB -->
+            <Policies>
+                <TimeBasedTriggeringPolicy modulate="true" interval="1" />
+                <SizeBaseDTriggeringPolicy size="${every_file_size}" />
+            </Policies>
+            <DefaultRolloverStrategy max="1000" />
+            <Filters>
+                <!-- 显示所有信息 -->
+                <ThresholdFilter onMismatch="DENY" onMatch="ACCEPT" level="TRACE" />
+            </Filters>
+        </RollingRandomAccessFile>
+
+         <!-- error File Config -->
+        <RollingRandomAccessFile name="errorLog"
+                                     filePattern="${logBaseFolder}/%d{yyyy-MM-dd}/${logFileNamePrefix}-error-%d{yyyyMMdd-HH}.%i.log.gz"
+                                     fileName="${logBaseFolder}/error/${logFileNamePrefix}-error.log"
+                                     immediateFlush="false">
+            <PatternLayout charset="${log_charset}" pattern="${log_pattern}" />
+            <Policies>
+                <TimeBasedTriggeringPolicy modulate="true" interval="1" />
+                <SizeBaseDTriggeringPolicy size="${every_file_size}" />
+            </Policies>
+            <Filters>
+                <!-- 只显示error信息 -->
+				<!-- 只有输出级别大于给定的级别的日志信息才会输出到文件中 -->
+                <ThresholdFilter onMismatch="DENY" onMatch="ACCEPT" level="error" />
+            </Filters>
+        </RollingRandomAccessFile>
+    </appenders>
+
+
+    <!--然后定义logger，只有定义了logger并引入的appender，appender才会生效-->
+    <Loggers>
+		<!--使appender生效-->
+        <!--建立一个默认的root的logger-->
+		<!--声明了appender后,还必须将该appender添加到loggers的root节点中才会生效 -->
+        <root level="trace">
+            <!-- Only events at DIAG level or more specific are sent to the console. -->
+            <appender-ref ref="Console" />
+            <appender-ref ref="MyFile" />
+            <appender-ref ref="MyRollingFile" />
+            <appender-ref ref="allLog" />
+            <appender-ref ref="errorLog" />
+        </root>
+
+        <!--我们只让这个logger输出trace信息，其他的都是error级别-->
+        <!--
+        additivity开启的话，由于这个logger也是满足root的，所以会被打印两遍。
+        不过root logger 的level是error，为什么Bar 里面的trace信息也被打印两遍呢
+        -->
+        <!--<logger name="cn.edu.hust.learn_log4j2_01" level="trace" additivity="false">
+            <appender-ref ref="Console"/>
+        </logger>-->
+
+        <!-- 各应用按实际情况自行定义相关类的输出级别 -->
+       <!-- <AsyncLogger name="com.luox.user" level="DEBUG" />
+        <AsyncLogger name="com.apache" level="WARN" />-->
+
+        <!--<asyncRoot level="INFO">
+            &lt;!&ndash; 各应用自行调整，日志输出至文件，自动按时间、按文件大小进行归档 ,生产环境调默认为INFO，如有特殊需求，在disconf动态调级 &ndash;&gt;
+            <appender-ref level="DEBUG" ref="all" />
+            &lt;!&ndash; 日志输出至Console，仅在IDE开发时打开方便开发人员，部署到服务器之后必须置为OFF，level设置为OFF表示禁用Console控制台日志输出 &ndash;&gt;
+            <appender-ref level="TRACE" ref="console" />
+            &lt;!&ndash; 异常日志，不用改动 &ndash;&gt;
+            <appender-ref level="ERROR" ref="errorLog" />
+        </asyncRoot>-->
+    </Loggers>
+
+
+</Configuration>
+
+<!--
+以上工作都完成后,在代码只要调用LoggerFactory.getLogger(String)就能创建logger实例,
+就能在代码使用logger.info/logger.warn/logger.error等方法输出日志信息了.
+-->

@@ -18,9 +18,9 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @RequestMapping("/index1")
+    @RequestMapping("/index2")
     public String index(){
-        return "index1";
+        return "index2";
     }
 
     @RequestMapping("/queryAll")
