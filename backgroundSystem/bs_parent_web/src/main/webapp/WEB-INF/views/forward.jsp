@@ -1,5 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<jsp:forward page="index1.jsp"></jsp:forward>
+<jsp:forward page="forward.jsp"></jsp:forward>
 
 <%--<html>
 <head>

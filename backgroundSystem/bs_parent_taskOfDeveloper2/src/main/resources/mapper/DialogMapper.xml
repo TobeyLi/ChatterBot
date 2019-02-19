@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="cn.edu.hust.dao.DialogDao">
+    
+    <select id="pageQueryData" resultType="cn.edu.hust.bean.ChatDialog">
+        select * from chat_dialog
+        <where>
+            <if test="queryText!=null">
+                and inputMessage like concat('%',#{queryText},'%')
+            </if>
+        </where>
+        limit #{start},#{size}
+    </select>
+
+    <select id="pageQueryCount" resultType="int">
+        select count(*) from chat_dialog
+        <where>
+            <if test="queryText!=null">
+                and inputMessage like concat('%',#{queryText},'%')
+            </if>
+        </where>
+    </select>
+
+    <delete id="deleteDialogById">
+        delete from chat_dialog where chatId=#{chatId}
+    </delete>
+    
+    <delete id="deleteDialogs">
+        delete from chat_dialog where chatId in
+        <foreach collection="chatIds" item="chatId" open="(" close=")" separator=",">
+          #{chatId}
+        </foreach>
+    </delete>
+
+</mapper>

@@ -47,6 +47,9 @@
   <listener>
     <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
   </listener>
+  <listener>
+    <listener-class>cn.edu.hust.listener.SeverStartUpListener</listener-class>
+  </listener>
 
   <!--springMVC配置，只是控制网站跳转逻辑-->
   <servlet>

@@ -16,19 +16,20 @@ import java.util.List;
  */
 
 @Controller
+@RequestMapping("/workReport")
 public class WorkReportController {
 
     @Autowired
     private WorkReportService workReportService;
 
-    @RequestMapping("/workReport")
+    @RequestMapping("/index")
     public String workReport(Model model){
 
         DecimalFormat df=new DecimalFormat("0.00");
 
         int numOfDialog=0;
         numOfDialog=workReportService.getNumOfDialog();
-        System.out.println("numOfDialog:"+numOfDialog);
+        /*System.out.println("numOfDialog:"+numOfDialog);*/
         model.addAttribute("numOfDialog",numOfDialog);
 
         int numOfBotAns=0;
@@ -55,13 +56,13 @@ public class WorkReportController {
         model.addAttribute("NumOfUserInDialog",NumOfUserInDialog);
         model.addAttribute("aveNumOfDialog4User",aveNumOfDialog4User);
 
-        return "workReport";
+        return "workReport/index";
     }
 
     @RequestMapping("/doSearch")
     public String searchDialog(String word4Search,Model model){
         String word=word4Search;
-        return "workReport2";
+        return "workReport/workReport2";
     }
 
     @ResponseBody

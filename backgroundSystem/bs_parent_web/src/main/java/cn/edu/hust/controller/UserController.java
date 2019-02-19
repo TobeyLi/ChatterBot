@@ -20,14 +20,14 @@ public class UserController {
 
     @RequestMapping("/index2")
     public String index(){
-        return "index2";
+        return "forTest";
     }
 
     @RequestMapping("/queryAll")
     public String queryAll(){
         System.out.println("调用UserController...");
         List<User> users=userService.queryAll();
-        return "index1";
+        return "forward";
     }
 
     @RequestMapping("/login")

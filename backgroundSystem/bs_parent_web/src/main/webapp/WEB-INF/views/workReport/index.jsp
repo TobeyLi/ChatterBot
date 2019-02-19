@@ -22,7 +22,7 @@
 <div class="container">
     <div class="row clearfix">
         <div class="col-md-12 column">
-            <nav class="navbar navbar-default" role="navigation">
+            <nav class="navbar navbar-default navbar-inverse" role="navigation">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> <a class="navbar-brand" href="#">Brand</a>
                 </div>
@@ -106,7 +106,7 @@
                     <a href="#">工作报表</a>
                 </li>
                 <li>
-                    <a href="#">聊天信息</a>
+                    <a href="${APP_PATH}/dialog/index">聊天信息</a>
                 </li>
                 <%--<li class="disabled">
                     <a href="#">用户管理</a>
