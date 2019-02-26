@@ -1,16 +1,28 @@
 package cn.edu.hust.service;
 
-import cn.edu.hust.bean.User;
-
 import java.util.List;
+import java.util.Map;
 
-/**
- * 测试项目结构用
- */
+import cn.edu.hust.bean.User;
 
 public interface UserService {
 
-    List<User> queryAll();
+	List<User> queryAll();
 
-    boolean login();
+	User query4Login(User user);
+
+	List<User> pageQueryData(Map<String, Object> map);
+
+	int pageQueryCount(Map<String, Object> map);
+
+	void insertUser(User user);
+
+	User queryById(Integer id);
+
+	void updateUser(User user);
+
+	void deleteusers(Map<String, Object> map);
+
+	void deleteUserById(Integer userId);
+
 }

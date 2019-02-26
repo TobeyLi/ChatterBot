@@ -10,6 +10,24 @@
         <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller" />
     </context:component-scan>
 
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <!--path="/**" 表示所有的请求都会走这个拦截器-->
+            <mvc:mapping path="/**"/>
+
+            <!--排除一些不需要拦截的请求：静态资源，登录页面，AJAX请求-->
+            <mvc:exclude-mapping path="/login"></mvc:exclude-mapping>
+            <mvc:exclude-mapping path="/doAJAXLogin"></mvc:exclude-mapping>
+            <mvc:exclude-mapping path="/css/**"></mvc:exclude-mapping>
+            <mvc:exclude-mapping path="/fonts/**"></mvc:exclude-mapping>
+            <mvc:exclude-mapping path="/images/**"></mvc:exclude-mapping>
+            <mvc:exclude-mapping path="/js/**"></mvc:exclude-mapping>
+            <mvc:exclude-mapping path="/layer/**"></mvc:exclude-mapping>
+
+            <bean class="cn.edu.hust.listener.LoginInterceptor"></bean>
+        </mvc:interceptor>
+    </mvc:interceptors>
+
     <!--配置视图解析器-->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <!--配置所有返回页面的位置-->

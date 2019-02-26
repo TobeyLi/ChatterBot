@@ -11,51 +11,69 @@
 
     <link rel="stylesheet" type="text/css" href="${APP_PATH}/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="${APP_PATH}/css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="${APP_PATH}/css/leftTree.css">
+    <link rel="stylesheet" type="text/css" href="${APP_PATH}/css/shouye.css">
 
     <script type="text/javascript" src="${APP_PATH}/js/jquery-3.3.1.js"></script>
     <script type="text/javascript" src="${APP_PATH}/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="${APP_PATH}/js/navbar.js"></script>
     <script type="text/javascript" src="${APP_PATH}/layer/layer.js"></script>
+    <script type="text/javascript" src="${APP_PATH}/js/dialog_index.js"></script>
+    <script type="text/javascript" src="${APP_PATH}/js/leftTree.js"></script>
+
 </head>
 <body>
 
-<div class="container">
-    <div class="row clearfix">
-        <div class="col-md-12 column">
-            <nav class="navbar navbar-default navbar-inverse" role="navigation">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> <a class="navbar-brand" href="#">Brand</a>
-                </div>
+<div class="container-fluid">
 
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-inverse">
-                        <li>
-                            <a href="#">智能交互平台</a>
-                        </li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown<strong class="caret"></strong></a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a href="#">Action</a>
-                                </li>
-                                <li class="divider">
-                                </li>
-                                <li>
-                                    <a href="#">logout</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
+    <div class="row clearfix">
+        <div class="col-sm-12 column">
+
+            <nav class="navbar navbar-inverse" role="navigation">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <div><a class="navbar-brand" style="font-size:32px;" href="#">brand</a></div>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a href="#">智能交互平台</a>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li style="padding-top:8px;">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-default btn-success dropdown-toggle" data-toggle="dropdown">
+                                        <i class="glyphicon glyphicon-user"></i> ${loginUser.userName} <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li class="disabled"><a href="#"><i class="glyphicon glyphicon-cog"></i> 个人设置</a></li>
+                                        <li class="disabled"><a href="#"><i class="glyphicon glyphicon-comment"></i> 消息</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="${APP_PATH}/logout"><i class="glyphicon glyphicon-off"></i> 退出系统</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li style="margin-left:10px;padding-top:8px;">
+                                <button type="button" class="btn btn-default btn-danger" class="disabled">
+                                    <span class="glyphicon glyphicon-question-sign"></span> 帮助
+                                </button>
+                            </li>
+                        </ul>
+                        <%--<form class="navbar-form navbar-right">
+                            <input type="text" class="form-control" placeholder="Search...">
+                        </form>--%>
+                    </div>
                 </div>
             </nav>
+
         </div>
     </div>
 
     <div class="row clearfix" style="overflow: hidden">
-        <div class="col-md-2 column">
-            <ul class="nav nav-pills nav-stacked navbar-inverse">
+
+        <div class="col-sm-2 sidebar" style="margin-top: 20px;margin-left:15px">
+            <%--<ul class="nav nav-pills nav-stacked navbar-inverse">
                 <li>
                     <a href="${APP_PATH}/workReport/index">工作报表</a>
                 </li>
@@ -77,13 +95,46 @@
                 <li class="disabled">
                     <a href="#">活跃度</a>
                 </li>
-            </ul>
+            </ul>--%>
+            <div class="tree">
+                <ul style="padding-left:0px;" class="list-group">
+                    <li class="list-group-item tree-closed" >
+                        <a href="${APP_PATH}/shouye"><i class="glyphicon glyphicon-dashboard"></i> 控制面板</a>
+                    </li>
+
+                    <li class="list-group-item tree-closed">
+                        <span><i class="glyphicon glyphicon glyphicon-tasks"></i> 用户管理<span class="badge" style="float: right">2</span></span>
+                        <ul style="margin-top: 10px;">
+                            <li style="height: 30px;">
+                                <a href="${APP_PATH}/user/index" style="color: red;"><i class="glyphicon glyphicon-user"></i>系统用户</a>
+                            </li>
+                            <li style="height: 30px;">
+                                <a href="#"><i class="glyphicon glyphicon-king"></i> 微信用户</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="list-group-item">
+                        <span><i class="glyphicon glyphicon glyphicon-tasks"></i> <a href="${APP_PATH}/workReport/index">工作报表 </a></span>
+                    </li>
+                    <li class="list-group-item tree-closed active">
+                        <span><i class="glyphicon glyphicon-ok"></i> 对话管理 </span>
+                    </li>
+
+                    <li class="list-group-item disabled">
+                        <span><i class="glyphicon glyphicon-list-alt"></i> 操作流水 </span>
+                    </li>
+                    <li class="list-group-item disabled">
+                        <span><i class="glyphicon glyphicon-asterisk"></i> 活跃度 </span>
+                    </li>
+                </ul>
+            </div>
         </div>
 
-        <div class="col-md-10 column">
+        <div class="col-sm-10 col-sm-offset-2">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h3 class="panel-title"><i class="glyphicon glyphicon-th"></i> 数据列表</h3>
+                    <h3 class="panel-title"><i class="glyphicon glyphicon-th"></i> 对话管理</h3>
                 </div>
 
                 <div class="panel-body">
@@ -170,7 +221,7 @@
         var loadingIndex=null;
         var jsonData={
             "pageNo":pageNo,
-            "pageSize":2
+            "pageSize":3
         }
         if(likeFlag==true){
             jsonData.queryText=$("#queryText").val();

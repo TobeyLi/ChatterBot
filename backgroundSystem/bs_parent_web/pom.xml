@@ -26,6 +26,13 @@
     <dependencies>
         <dependency>
             <groupId>cn.edu.hust</groupId>
+            <artifactId>bs_parent_chat</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>cn.edu.hust</groupId>
             <artifactId>bs_parent_taskOfDeveloper1</artifactId>
             <version>1.0-SNAPSHOT</version>
             <scope>compile</scope>

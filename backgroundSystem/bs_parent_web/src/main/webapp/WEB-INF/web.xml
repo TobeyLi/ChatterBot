@@ -61,9 +61,32 @@
     </init-param>
     <load-on-startup>1</load-on-startup>
   </servlet>
+
+  <!--<servlet>
+    <servlet-name>initAccessTokenServlet</servlet-name>
+    <servlet-class>
+      cn.edu.hust.controller.AccessTokenServlet
+    </servlet-class>
+    <init-param>
+      <param-name>appid</param-name>
+      <param-value>wx28d0349b4838aa71</param-value>
+    </init-param>
+    <init-param>
+      <param-name>appsecret</param-name>
+      <param-value>dbf847f72aaadb4904e937e6fc30976d</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+  </servlet>-->
+
   <servlet-mapping>
     <servlet-name>springmvc</servlet-name>
     <url-pattern>/</url-pattern>
   </servlet-mapping>
+
+  <!--<servlet-mapping>
+    <servlet-name>initAccessTokenServlet</servlet-name>
+    <url-pattern>/chbot/*</url-pattern>
+  </servlet-mapping>-->
+
 
 </web-app>

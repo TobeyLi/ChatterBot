@@ -10,7 +10,6 @@ public class User {
     private String gender;
     private String phoneNumber;
     private String email;
-    private String rank;
 
     public Integer getUserId() {
         return userId;
@@ -76,11 +75,4 @@ public class User {
         this.email = email;
     }
 
-    public String getRank() {
-        return rank;
-    }
-
-    public void setRank(String rank) {
-        this.rank = rank;
-    }
 }
