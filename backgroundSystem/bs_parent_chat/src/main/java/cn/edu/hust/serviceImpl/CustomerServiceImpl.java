@@ -2,13 +2,16 @@ package cn.edu.hust.serviceImpl;
 
 import cn.edu.hust.bean.AccessToken;
 import cn.edu.hust.bean.TextMessage;
+import cn.edu.hust.service.CustomerService;
+import org.springframework.stereotype.Service;
 
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-public class CustomerService {
+@Service
+public class CustomerServiceImpl{
 
     public static void connectWeiXinInterface(AccessToken token, TextMessage textMessage, String chatbotMessage) {
 

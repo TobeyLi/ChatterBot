@@ -31,4 +31,8 @@ public class DialogServiceImpl implements DialogService {
     public void deleteDialogs(Map<String, Object> map) {
         dialogDao.deleteDialogs(map);
     }
+
+    public void insertDialog(ChatDialog chatDialog) {
+        dialogDao.insertDialog(chatDialog);
+    }
 }

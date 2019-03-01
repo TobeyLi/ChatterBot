@@ -11,7 +11,7 @@
         select count(*) from chat_dialog where responseMessage is not null
     </select>
 
-    <select id="getNumOfUserInDialog" resultType="Integer">
-        select count(distinct userId) from chat_dialog
+    <select id="getNumOfWeiXinUserInDialog" resultType="Integer">
+        select count(distinct openid) from chat_dialog
     </select>
 </mapper>

@@ -1,22 +1,20 @@
 package cn.edu.hust.controller;
 
-import cn.edu.hust.bean.TextMessage;
-import cn.edu.hust.service.WechatCoreService;
-import cn.edu.hust.serviceImpl.TextMessageHandle;
-import cn.edu.hust.utils.BaseMessageUtil;
-import cn.edu.hust.utils.MessageUtil;
-import cn.edu.hust.utils.SignatureCheckUtil;
-import cn.edu.hust.utils.TextMessageUtil;
+import cn.edu.hust.bean.*;
+import cn.edu.hust.service.*;
+import cn.edu.hust.utils.*;
+import net.sf.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Map;
 
 @Controller
@@ -26,8 +24,15 @@ public class WechatCoreController {
     @Autowired
     private SignatureCheckUtil signatureCheckUtil;
 
+
     @Autowired
-    private WechatCoreService wechatCoreService;
+    private WeiXinUserService weiXinUserService;
+
+    @Autowired
+    private DialogService dialogService;
+
+    @Autowired
+    private TextMessageHandleService textMessageHandleService;
 
     /**
      * @Description: 验证请求是否来自微信服务器
@@ -64,87 +69,86 @@ public class WechatCoreController {
 
     //消息处理
     @RequestMapping(method=RequestMethod.POST)
-    public void doPOST(HttpServletRequest request,HttpServletResponse response) {
+    public void doPOST(HttpServletRequest request,HttpServletResponse response) throws IOException {
 
         response.setCharacterEncoding("utf-8");
 
-        PrintWriter printWriter=null;
 
         //将微信请求xml转为map格式，获取所需的参数
-        final Map<String,String> map = MessageUtil.xmlToMap(request);
+        final Map<String, String> map = MessageUtil.xmlToMap(request);
         final String ToUserName = map.get("ToUserName");
         final String FromUserName = map.get("FromUserName");
+        //System.out.println(FromUserName);
         //final String CreateTime=map.get("CreateTime");
-        /*System.out.println(FromUserName);*/
         final String MsgType = map.get("MsgType");
-        final String Content=map.get("Content");
-        final String MsgId=map.get("MsgId");
+        final String Content = map.get("Content");
+        final String MsgId = map.get("MsgId");
 
-        final TextMessage textMessage=new TextMessage();
+        //封装信息到TextMessage
+        final TextMessage textMessage = new TextMessage();
         textMessage.setToUserName(ToUserName);
         textMessage.setFromUserName(FromUserName);
         //textMessage.setCreateTime(CreateTime);
         textMessage.setContent(Content);
         textMessage.setMsgId(MsgId);
 
-        if("text".equals(MsgType)){
 
-            TextMessageHandle.handle(textMessage);
-        }
-
+        PrintWriter printWriter = null;
+        //避免超时时微信重新请求
         try {
-
-            printWriter=response.getWriter();
-
-            //避免超时时微信重新请求
-            printWriter.write("");
-        } catch (IOException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }finally {
-            printWriter.close();
-        }
-
-
-        /*String message = null;
-        //处理文本类型,回复用户输入的内容
-        if("text".equals(MsgType)){
-            BaseMessageUtil textMessage = new TextMessageUtil();
-            message = textMessage.initMessage(FromUserName, ToUserName,Content);
-        }
-
-        try {
-
-            printWriter=response.getWriter();
-            printWriter.write(message);
-        } catch (IOException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }finally {
-            printWriter.close();
-        }*/
-
-
-        /*try {
-
-            Thread responseThread =new Thread(){
-                @Override
-                public void run() {
-                    wechatCoreService.handleMessage(printWriter,map,ToUserName,FromUserName,MsgType);
-                }
-            };
-
-            responseThread.start();
-
-        } catch (Exception e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }finally {
+            printWriter = response.getWriter();
             printWriter.write("success");
-            //printWriter.flush();
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        } finally {
             printWriter.close();
-        }*/
+        }
+
+
+        //新增微信用户
+        WeiXinUser dbWeiXinUser = null;
+        WeiXinUser weiXinUser = null;
+        try {
+            dbWeiXinUser = weiXinUserService.queryByOpenid(textMessage.getFromUserName());
+            if (dbWeiXinUser == null) {
+                JSONObject userInfo = WeiXinUserInfoUtil.getUserInfo(textMessage.getFromUserName());
+                //System.out.println(userInfo);
+                weiXinUser = WeiXinUserInfoUtil.getWeiXinUser(userInfo);
+                weiXinUserService.insertWeiXinUser(weiXinUser);
+            } else {
+                //System.out.println("该微信用户已存在.");
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+
+        //最后的aa表示“上午”或“下午”    HH表示24小时制    如果换成hh表示12小时制
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss aa");
+        Date sendTime = new Date();
+        String sendTimeStr = simpleDateFormat.format(sendTime);
+        //System.out.println("WechatCoreController");
+        System.out.println("sendTimeStr:" + sendTimeStr);
+        String chatbotMessage = "";
+        //使用数据库与机器人通信
+        if("text".equals(MsgType)){
+            chatbotMessage=textMessageHandleService.dealTextMessage(textMessage);
+        }
+        Date responseTime = new Date();
+        String responseTimeStr = simpleDateFormat.format(responseTime);
+        System.out.println("responseTimeStr:" + responseTimeStr);
+
+
+        //将聊天信息插入数据库
+        ChatDialog chatDialog = null;
+        if (dbWeiXinUser != null) {
+            chatDialog = DialogUtil.getChatDialog(textMessage.getFromUserName(), dbWeiXinUser.getNickname(), textMessage.getContent(), sendTimeStr, chatbotMessage, responseTimeStr);
+        } else if (weiXinUser != null) {
+            chatDialog = DialogUtil.getChatDialog(textMessage.getFromUserName(), weiXinUser.getNickname(), textMessage.getContent(), sendTimeStr, chatbotMessage, responseTimeStr);
+        }
+        dialogService.insertDialog(chatDialog);
+
 
     }
-
 }

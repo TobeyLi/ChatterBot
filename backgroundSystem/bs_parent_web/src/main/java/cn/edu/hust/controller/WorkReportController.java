@@ -47,13 +47,13 @@ public class WorkReportController {
         int queOfUnResolved=numOfDialog-numOfBotAns;
         model.addAttribute("queOfUnResolved",queOfUnResolved);
 
-        int NumOfUserInDialog=0;
-        NumOfUserInDialog=workReportService.getNumOfUserInDialog();
+        int NumOfWeiXinUserInDialog=0;
+        NumOfWeiXinUserInDialog=workReportService.getNumOfWeiXinUserInDialog();
         String aveNumOfDialog4User="0";
         if(numOfDialog!=0){
-            aveNumOfDialog4User=df.format( (float)numOfDialog/(float)NumOfUserInDialog );
+            aveNumOfDialog4User=df.format( (float)numOfDialog/(float)NumOfWeiXinUserInDialog );
         }
-        model.addAttribute("NumOfUserInDialog",NumOfUserInDialog);
+        model.addAttribute("NumOfWeiXinUserInDialog",NumOfWeiXinUserInDialog);
         model.addAttribute("aveNumOfDialog4User",aveNumOfDialog4User);
 
         return "workReport/index";

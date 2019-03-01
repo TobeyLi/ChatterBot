@@ -30,9 +30,9 @@ public class WorkReportServiceImpl implements WorkReportService {
         return numOfBotAns;
     }
 
-    public int getNumOfUserInDialog() {
-        int NumOfUserInDialog=0;
-        NumOfUserInDialog=workReportDao.getNumOfUserInDialog();
-        return NumOfUserInDialog;
+    public int getNumOfWeiXinUserInDialog() {
+        int NumOfWeiXinUserInDialog=0;
+        NumOfWeiXinUserInDialog=workReportDao.getNumOfWeiXinUserInDialog();
+        return NumOfWeiXinUserInDialog;
     }
 }

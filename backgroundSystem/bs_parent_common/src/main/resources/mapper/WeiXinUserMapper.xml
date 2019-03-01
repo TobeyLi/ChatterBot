@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.edu.hust.dao.WeiXinUserDao">
+
+	<insert id="insertWeiXinUser">
+		insert into weixin_user(subscribe,openid,nickname,sex,language,city,province,country,headimgurl,subscribe_time,unionid,remark,groupid,tagid_list,subscribe_scene,qr_scene,qr_scene_str)
+		values(
+				  #{subscribe},#{openid},#{nickname},#{sex},#{language},#{city},#{province},#{country},#{headimgurl},#{subscribe_time},#{unionid},#{remark},#{groupid},#{tagid_list},#{subscribe_scene},#{qr_scene},#{qr_scene_str}
+			  )
+	</insert>
+
+	<select id="queryByOpenid" resultType="cn.edu.hust.bean.WeiXinUser">
+		select * from weixin_user where openid=#{openid}
+	</select>
+
+
+	<select id="pageQueryData" resultType="cn.edu.hust.bean.WeiXinUser">
+		select *
+		from weixin_user
+		<where>
+			<if test="queryText !=null">
+				and nickname like concat('%',#{queryText},'%')
+			</if>
+		</where>
+		limit #{start},#{size}
+	</select>
+
+	<select id="pageQueryCount" resultType="int">
+		select count(*) from weixin_user
+		<where>
+			<if test="queryText !=null">
+				and nickname like concat('%',#{queryText},'%')
+			</if>
+		</where>
+	</select>
+
+
+	<delete id="deleteWeixin_users">
+		delete from weixin_user where wxuid in
+		<foreach collection="wxuids" item="wxuid" open="(" close=")" separator=",">
+			#{wxuid}
+		</foreach>
+	</delete>
+
+	<delete id="deleteWeixinUserById">
+		delete from weixin_user
+		where wxuid=#{wxuid}
+	</delete>
+
+</mapper>

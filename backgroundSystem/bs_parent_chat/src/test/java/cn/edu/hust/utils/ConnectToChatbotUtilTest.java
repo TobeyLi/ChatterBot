@@ -6,8 +6,8 @@ public class ConnectToChatbotUtilTest {
 
     public static void main(String[] args) throws InterruptedException, IOException {
         // TODO Auto-generated method stub
-        String python="E:\\GitHub\\demo\\Scripts\\python";
-        String funcArg1="我头痛";
+        String python="D:\\developmentSoftware\\backEndDevelopment\\Python\\envs\\chatterbot\\Scripts\\python";
+        String funcArg1="你好";
 
         String[] execArgs = new String[]{ python, "E:\\GitHub\\gongChengShiJian\\chatbot3_0\\test.py",funcArg1};
 

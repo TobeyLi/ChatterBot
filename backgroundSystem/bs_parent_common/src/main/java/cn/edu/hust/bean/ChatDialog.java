@@ -3,7 +3,8 @@ package cn.edu.hust.bean;
 public class ChatDialog {
 
     private Integer chatId;
-    private Integer userId;
+    private String openid;
+    private String nickname;
     private String inputMessage;
     private String keyword;
     private String sendTime;
@@ -18,12 +19,20 @@ public class ChatDialog {
         this.chatId = chatId;
     }
 
-    public Integer getUserId() {
-        return userId;
+    public String getOpenid() {
+        return openid;
     }
 
-    public void setUserId(Integer userId) {
-        this.userId = userId;
+    public void setOpenid(String openid) {
+        this.openid = openid;
+    }
+
+    public String getNickname() {
+        return nickname;
+    }
+
+    public void setNickname(String nickname) {
+        this.nickname = nickname;
     }
 
     public String getInputMessage() {

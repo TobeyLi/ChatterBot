@@ -75,6 +75,7 @@
     <div class="row clearfix">
 
         <div class="col-sm-2 sidebar" style="margin-top: 20px;margin-left:15px">
+        <%--<div class="col-sm-2 sidebar">--%>
             <%--<ul class="nav nav-pills nav-stacked navbar-inverse">
                 <li>
                     <a href="${APP_PATH}/workReport/index">工作报表</a>
@@ -108,10 +109,10 @@
                         <span><i class="glyphicon glyphicon glyphicon-tasks"></i> 用户管理<span class="badge" style="float: right">2</span></span>
                         <ul style="margin-top: 10px;">
                             <li style="height: 30px;">
-                                <a href="${APP_PATH}/user/index" style="color: red;"><i class="glyphicon glyphicon-user"></i>系统用户</a>
+                                <a href="${APP_PATH}/user/index"><i class="glyphicon glyphicon-user"></i>系统用户</a>
                             </li>
                             <li style="height: 30px;" class="disabled">
-                                <a href="#"><i class="glyphicon glyphicon-king"></i> 微信用户</a>
+                                <a href="${APP_PATH}/wx_user/index"><i class="glyphicon glyphicon-king"></i> 微信用户</a>
                             </li>
                         </ul>
                     </li>

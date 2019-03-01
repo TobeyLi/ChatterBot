@@ -145,7 +145,7 @@ public class UserController {
 
 			// 总的数据条数
 			int totalsize = userService.pageQueryCount(map);
-			System.out.println(totalsize);
+			//System.out.println(totalsize);
 
 			// 最大的页码数
 			int totalno = 0;

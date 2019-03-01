@@ -73,6 +73,7 @@
     <div class="row clearfix" style="overflow: hidden">
 
         <div class="col-sm-2 sidebar" style="margin-top: 20px;margin-left:15px">
+        <%--<div class="col-sm-2 sidebar" >--%>
             <%--<ul class="nav nav-pills nav-stacked navbar-inverse">
                 <li>
                     <a href="${APP_PATH}/workReport/index">工作报表</a>
@@ -106,10 +107,10 @@
                         <span><i class="glyphicon glyphicon glyphicon-tasks"></i> 用户管理<span class="badge" style="float: right">2</span></span>
                         <ul style="margin-top: 10px;">
                             <li style="height: 30px;">
-                                <a href="${APP_PATH}/user/index" style="color: red;"><i class="glyphicon glyphicon-user"></i>系统用户</a>
+                                <a href="${APP_PATH}/user/index"><i class="glyphicon glyphicon-user"></i>系统用户</a>
                             </li>
                             <li style="height: 30px;">
-                                <a href="#"><i class="glyphicon glyphicon-king"></i> 微信用户</a>
+                                <a href="${APP_PATH}/wx_user/index"><i class="glyphicon glyphicon-king"></i> 微信用户</a>
                             </li>
                         </ul>
                     </li>
@@ -159,8 +160,8 @@
                                     <tr >
                                         <th width="30">#</th>
                                         <th width="30"><input type="checkbox" id="allSelBox"></th>
-                                        <th>chatId</th>
-                                        <th>userId</th>
+                                        <th>id</th>
+                                        <th>用户昵称</th>
                                         <th>用户聊天</th>
                                         <th>发送时间</th>
                                         <th>机器人回复</th>
@@ -221,7 +222,7 @@
         var loadingIndex=null;
         var jsonData={
             "pageNo":pageNo,
-            "pageSize":3
+            "pageSize":5
         }
         if(likeFlag==true){
             jsonData.queryText=$("#queryText").val();
@@ -249,7 +250,7 @@
                         tableContent+='    <td>'+(i+1)+'</td> ';
                         tableContent+='    <td><input type="checkbox" name="chatId" value="'+dialog.chatId+'"></td>';
                         tableContent+='        <td>'+dialog.chatId+'</td>';
-                        tableContent+='        <td>'+dialog.userId+'</td>';
+                        tableContent+='        <td>'+dialog.nickname+'</td>';
                         tableContent+='        <td>'+dialog.inputMessage+'</td>';
                         tableContent+='        <td>'+dialog.sendTime+'</td>';
                         tableContent+='       <td>'+dialog.responseMessage+'</td>';
@@ -258,7 +259,7 @@
                         tableContent+='        <button type="button" class="btn btn-success btn-xs disabled"><i class=" glyphicon glyphicon-check"></i></button>';
                         tableContent+='    <button type="button" class="btn btn-primary btn-xs disabled"><i class=" glyphicon glyphicon-pencil"></i></button>';
                         /*tableContent+='    <button type="button" class="btn btn-danger btn-xs" onclick="deleteDialog('+dialog.chatId+',\''+dialog.userId+'\')"><i class=" glyphicon glyphicon-remove"></i></button>';*/
-                        tableContent+='    <button type="button" class="btn btn-danger btn-xs" onclick="deleteDialog('+dialog.chatId+','+dialog.userId+')"><i class=" glyphicon glyphicon-remove"></i></button>';
+                        tableContent+='    <button type="button" class="btn btn-danger btn-xs" onclick="deleteDialog('+dialog.chatId+',\''+dialog.nickname+'\')"><i class=" glyphicon glyphicon-remove"></i></button>';
                         tableContent+='    </td>';
                         tableContent+='</tr>';
                     });
@@ -296,8 +297,8 @@
         })
     }
     
-    function deleteDialog(chatId,userId) {
-        layer.confirm("删除对话信息【chatId="+chatId+","+"userId="+userId+"】,是否继续",{icon:3,title:"提示"},function (cindex) {
+    function deleteDialog(chatId,nickname) {
+        layer.confirm("删除对话信息【chatId="+chatId+","+"nickname="+nickname+"】,是否继续",{icon:3,title:"提示"},function (cindex) {
 
             //删除当前数据
             $.ajax({

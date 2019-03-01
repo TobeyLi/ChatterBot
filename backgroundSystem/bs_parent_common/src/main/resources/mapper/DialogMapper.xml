@@ -33,4 +33,11 @@
         </foreach>
     </delete>
 
+    <insert id="insertDialog">
+        insert into chat_dialog(openid,nickname,inputMessage,keyword,sendTime,responseMessage,responseTime)
+        values(
+                  #{openid},#{nickname},#{inputMessage},#{keyword},#{sendTime},#{responseMessage},#{responseTime}
+              )
+    </insert>
+
 </mapper>

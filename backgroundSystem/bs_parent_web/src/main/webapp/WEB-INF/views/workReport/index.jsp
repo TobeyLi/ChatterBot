@@ -70,6 +70,7 @@
     <div class="row clearfix">
 
         <div class="col-sm-2 sidebar" style="margin-top: 20px;margin-left:15px">
+            <%--<div class="col-sm-2 sidebar">--%>
             <div class="tree">
                 <ul style="padding-left:0px;" class="list-group">
                     <li class="list-group-item tree-closed" >
@@ -80,10 +81,10 @@
                         <span><i class="glyphicon glyphicon glyphicon-tasks"></i> 用户管理<span class="badge" style="float: right">2</span></span>
                         <ul style="margin-top: 10px;">
                             <li style="height: 30px;">
-                                <a href="${APP_PATH}/user/index" style="color: red;"><i class="glyphicon glyphicon-user"></i>系统用户</a>
+                                <a href="${APP_PATH}/user/index"><i class="glyphicon glyphicon-user"></i>系统用户</a>
                             </li>
                             <li style="height: 30px;">
-                                <a href="#"><i class="glyphicon glyphicon-king"></i> 微信用户</a>
+                                <a href="${APP_PATH}/wx_user/index"><i class="glyphicon glyphicon-king"></i> 微信用户</a>
                             </li>
                         </ul>
                     </li>
@@ -181,7 +182,7 @@
                                                     <hr/>
                                                     <p>
                                                         会话人次：
-                                                        <span>${NumOfUserInDialog}</span>
+                                                        <span>${NumOfWeiXinUserInDialog}</span>
                                                     </p>
                                                     <p>
                                                         总会话量：

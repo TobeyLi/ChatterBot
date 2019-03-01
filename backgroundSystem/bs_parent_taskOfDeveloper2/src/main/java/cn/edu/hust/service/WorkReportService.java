@@ -14,5 +14,5 @@ public interface WorkReportService {
     int getNumOfDialog();
     int getNumOfBotAns();
 
-    int getNumOfUserInDialog();
+    int getNumOfWeiXinUserInDialog();
 }

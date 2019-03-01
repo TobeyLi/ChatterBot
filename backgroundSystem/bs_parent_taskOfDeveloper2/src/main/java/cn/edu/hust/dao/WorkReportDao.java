@@ -13,5 +13,5 @@ public interface WorkReportDao {
 
     int getNumOfBotAns();
 
-    int getNumOfUserInDialog();
+    int getNumOfWeiXinUserInDialog();
 }

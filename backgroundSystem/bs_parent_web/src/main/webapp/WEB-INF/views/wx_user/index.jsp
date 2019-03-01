@@ -84,7 +84,7 @@ table tbody td:nth-child(even) {
 
     <div class="row">
         <div class="col-sm-2 sidebar" style="margin-top: 20px;margin-left:15px">
-            <%--<div class="col-sm-2 sidebar">--%>
+        <%--<div class="col-sm-2 sidebar">--%>
             <div class="tree">
                 <ul style="padding-left:0px;" class="list-group">
                     <li class="list-group-item tree-closed" >
@@ -95,10 +95,10 @@ table tbody td:nth-child(even) {
                         <span><i class="glyphicon glyphicon glyphicon-tasks"></i> 用户管理<span class="badge" style="float: right">2</span></span>
                         <ul style="margin-top: 10px;">
                             <li style="height: 30px;">
-                                <a href="${APP_PATH}/user/index" style="color: red;"><i class="glyphicon glyphicon-user"></i>系统用户</a>
+                                <a href="${APP_PATH}/user/index" ><i class="glyphicon glyphicon-user"></i>系统用户</a>
                             </li>
                             <li style="height: 30px;">
-                                <a href="${APP_PATH}/wx_user/index"><i class="glyphicon glyphicon-king"></i> 微信用户</a>
+                                <a href="${APP_PATH}/wx_user/index" style="color: red;"><i class="glyphicon glyphicon-king"></i> 微信用户</a>
                             </li>
                         </ul>
                     </li>
@@ -155,10 +155,10 @@ table tbody td:nth-child(even) {
                             style="float: right; margin-left: 10px;">
                         <i class=" glyphicon glyphicon-remove"></i> 删除
                     </button>
-                    <button id="insertBtn" type="button" class="btn btn-primary"
+                    <%--<button id="insertBtn" type="button" class="btn btn-primary disabled"
                             style="float: right;" onclick="window.location.href='${APP_PATH}/user/add'">
                         <i class="glyphicon glyphicon-plus"></i> 新增
-                    </button>
+                    </button>--%>
                     <br>
                     <hr style="clear: both;">
                     <div class="table-responsive">
@@ -169,24 +169,21 @@ table tbody td:nth-child(even) {
                                 <tr>
                                     <th width="30">#</th>
                                     <th width="30"><input type="checkbox" id="allSelBox"></th>
-                                    <th>用户名</th>
+                                    <th>id</th>
                                     <th>昵称</th>
                                     <th>性别</th>
-                                    <th>电话号码</th>
-                                    <th>电子邮箱</th>
+                                    <th>城市</th>
                                     <th width="100">操作</th>
                                 </tr>
                                 </thead>
-
 
                                 <tbody id="userData">
 
                                 </tbody>
 
-
                                 <tfoot>
                                 <tr>
-                                    <td colspan="8" align="center">
+                                    <td colspan="7" align="center">
                                         <ul class="pagination">
 
                                         </ul>
@@ -256,7 +253,7 @@ $("tbody .btn-primary").click(function() {
 
 //翻页
 function changePageno(pageno) {
-    window.location.href = "${APP_PATH}/user/index?pageno=" + pageno;
+    window.location.href = "${APP_PATH}/wx_user/index?pageno=" + pageno;
 }
 
 //分页查询
@@ -270,7 +267,7 @@ function pageQuery(pageno) {
 
     $.ajax({
                 type : "POST",
-                url : "${APP_PATH}/user/pageQuery",
+                url : "${APP_PATH}/wx_user/pageQuery",
                 data :jsonData,
                 beforeSend : function(){
                     loadingIndex = layer.msg('处理中', {
@@ -285,22 +282,21 @@ function pageQuery(pageno) {
                         var tableContent = "";
                         var pageContent = "";
 
-                        var userPage = result.data;
-                        var users = userPage.datas;
+                        var wxuserPage = result.data;
+                        var wxusers = wxuserPage.datas;
 
-                        $.each(users,function(i, user) {
+                        $.each(wxusers,function(i, wxuser) {
                                             tableContent += '    <tr>';
                                             tableContent += '      <td>'+(i+1)+'</td>';
-                                            tableContent += '      <td><input type="checkbox" name="userid" value="'+user.userId+'"></td>';
-                                            tableContent += '      <td>'+user.userName+'</td>';
-                                            tableContent += '      <td>'+user.nickname+'</td>';
-                                            tableContent += '      <td>'+user.gender+'</td>';
-                                            tableContent += '      <td>'+user.phoneNumber+'</td>';
-                                            tableContent += '      <td>'+user.email+'</td>';
+                                            tableContent += '      <td><input type="checkbox" name="wxuids" value="'+wxuser.wxuid+'"></td>';
+                                            tableContent += '      <td>'+wxuser.wxuid+'</td>';
+                                            tableContent += '      <td>'+wxuser.nickname+'</td>';
+                                            tableContent += '      <td>'+wxuser.sex+'</td>';
+                                            tableContent += '      <td>'+wxuser.city+'</td>';
                                             tableContent += '      <td>';
-                                            tableContent += '      <button type="button" class="btn btn-success btn-xs"><i class=" glyphicon glyphicon-check"></i></button>';
-                                            tableContent += '      <button type="button" onclick="goUpdatePage('+user.userId+')" class="btn btn-primary btn-xs"><i class=" glyphicon glyphicon-pencil"></i></button>';
-                                            tableContent += '   <button type="button" onclick="deleteUser('+user.userId+',\''+user.userName+'\')" class="btn btn-danger btn-xs"><i class=" glyphicon glyphicon-remove"></i></button>';
+                                            tableContent += '      <button type="button" class="btn btn-success btn-xs disabled"><i class=" glyphicon glyphicon-check"></i></button>';
+                                            tableContent += '      <button type="button" onclick="goUpdatePage('+wxuser.wxuid+')" class="btn btn-primary btn-xs" disabled><i class=" glyphicon glyphicon-pencil"></i></button>';
+                                            tableContent += '       <button type="button" onclick="deleteUser('+wxuser.wxuid+',\''+wxuser.nickname+'\')" class="btn btn-danger btn-xs"><i class=" glyphicon glyphicon-remove"></i></button>';
                                             tableContent += '      </td>';
                                             tableContent += '    </tr>';
 
@@ -315,7 +311,7 @@ function pageQuery(pageno) {
                            pageContent += ' <li><a href="#" onclick="pageQuery('+(pageno-1)+')">上一页</a></li>';
                        }
 
-                      for(var i=1; i<=userPage.totalNo; i++){
+                      for(var i=1; i<=wxuserPage.totalNo; i++){
                           if(i == pageno){
                               pageContent +='<li class="active"><a href="#">'+i+'</a></li>';
                           }else{
@@ -323,11 +319,11 @@ function pageQuery(pageno) {
                           }
                       }
 
-                      if(pageno< userPage.totalNo){
+                      if(pageno< wxuserPage.totalNo){
                           pageContent +='<li><a href="#" onclick="pageQuery('+(pageno+1)+')">下一页</a></li>';
                       }
 
-                      if(pageno == userPage.totalNo){
+                      if(pageno == wxuserPage.totalNo){
                           pageContent +='<li class="disabled" ><a style="background-color:lightgrey" href="#">下一页</a></li>';
                       }
 
@@ -351,7 +347,7 @@ function pageQuery(pageno) {
 
 //fuction goUpdatePage
 function goUpdatePage(id){
-    window.location.href = "${APP_PATH}/user/edit?id="+id;
+    window.location.href = "${APP_PATH}/wx_user/edit?id="+id;
 }
 
 //function	deleteUsers
@@ -372,7 +368,7 @@ function deleteUsers(){
             //删除选择的用户信息
             $.ajax({
                 type: "POST",
-                url: "${APP_PATH}/user/deletes",
+                url: "${APP_PATH}/wx_user/deletes",
                 data: $("#userForm").serialize(),//序列化表单数据
                 success : function(result){
                     if(result.success){
@@ -406,18 +402,15 @@ function deleteUsers(){
 
 }
 
-
-
-
 //function deleteUser
-function deleteUser(id, loginacct){
-    layer.confirm("删除用户信息【"+loginacct+"】,是否继续",  {icon: 3, title:'提示'}, function(cindex){
+function deleteUser(wxuid, nickname){
+    layer.confirm("删除用户信息【"+nickname+"】,是否继续",  {icon: 3, title:'提示'}, function(cindex){
 
         //删除用户信息
         $.ajax({
             type: "POST",
-            url: "${APP_PATH}/user/delete",
-            data: {userId :id},
+            url: "${APP_PATH}/wx_user/delete",
+            data: {wxuid :wxuid},
             success : function(result){
                 if(result.success){
                     pageQuery(1);
