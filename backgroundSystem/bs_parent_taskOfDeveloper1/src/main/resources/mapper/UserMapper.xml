@@ -34,7 +34,6 @@
     update user
     set nickname=#{nickname},password=#{password},email=#{email}
     where userId=#{userId}
-
 </update>
 
 <delete id="deleteUserById">

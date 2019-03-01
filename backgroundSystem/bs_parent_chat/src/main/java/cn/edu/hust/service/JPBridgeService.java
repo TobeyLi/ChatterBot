@@ -7,4 +7,6 @@ public interface JPBridgeService {
     void insertJPBridge(JPBridge jpBridge);
 
     JPBridge queryByUUID(String uuid);
+
+    void updateJPBridge(JPBridge jpBridge);
 }

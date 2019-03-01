@@ -29,7 +29,7 @@ public class TextMessageHandleServiceImpl implements TextMessageHandleService{
         //System.out.println("startTime:"+startTime);
         long endTime;
         double lengthOfTime=0;
-        double limit=15.0;
+        double limit=20.0;
         while(jpBridgeFromdb.getSolved()==0 && lengthOfTime<=limit){
             jpBridgeFromdb=jpBridgeService.queryByUUID(jpBridge2db.getUuid());
             endTime=System.currentTimeMillis();
@@ -41,6 +41,10 @@ public class TextMessageHandleServiceImpl implements TextMessageHandleService{
         String chatbotMessage;
         if(lengthOfTime>limit){
             chatbotMessage="响应超时，请稍候再试.";
+            //将处理状态标记为2，暂不处理
+            jpBridgeFromdb.setSolved(2);
+            jpBridgeService.updateJPBridge(jpBridgeFromdb);
+
         }else {
             chatbotMessage=jpBridgeFromdb.getResponseMessage();
         }

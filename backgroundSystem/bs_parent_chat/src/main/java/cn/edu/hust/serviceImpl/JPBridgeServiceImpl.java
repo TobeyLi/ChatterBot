@@ -20,4 +20,8 @@ public class JPBridgeServiceImpl implements JPBridgeService {
     public JPBridge queryByUUID(String uuid) {
         return jpBridgeDao.queryByUUID(uuid);
     }
+
+    public void updateJPBridge(JPBridge jpBridge) {
+        jpBridgeDao.updateJPBridge(jpBridge);
+    }
 }

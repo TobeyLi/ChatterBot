@@ -14,4 +14,10 @@
                )
     </insert>
 
+    <update id="updateJPBridge">
+        update jp_bridge
+        set solved=#{solved}
+        where uuid=#{uuid}
+    </update>
+
 </mapper>

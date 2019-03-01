@@ -149,6 +149,12 @@ public class WechatCoreController {
         }
         dialogService.insertDialog(chatDialog);
 
+        String error="响应超时，请稍候再试.";
+        if(chatbotMessage==error){
+            //重启聊天模块
+            RestartChatterUtil.reStartChatter();
+            return;
+        }
 
     }
 }
