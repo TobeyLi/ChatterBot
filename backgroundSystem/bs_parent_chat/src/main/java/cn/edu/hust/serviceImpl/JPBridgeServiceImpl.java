@@ -24,4 +24,14 @@ public class JPBridgeServiceImpl implements JPBridgeService {
     public void updateJPBridge(JPBridge jpBridge) {
         jpBridgeDao.updateJPBridge(jpBridge);
     }
+
+    @Override
+    public JPBridge queryOneByInputMessage(String inputMessage) {
+        return jpBridgeDao.queryOneByInputMessage(inputMessage);
+    }
+
+    @Override
+    public void deleteAll() {
+        jpBridgeDao.deleteAll();
+    }
 }

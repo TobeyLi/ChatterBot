@@ -9,4 +9,8 @@ public interface JPBridgeDao {
     JPBridge queryByUUID(String uuid);
 
     void updateJPBridge(JPBridge jpBridge);
+
+    JPBridge queryOneByInputMessage(String inputMessage);
+
+    void deleteAll();
 }

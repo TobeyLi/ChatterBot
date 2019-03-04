@@ -8,8 +8,9 @@ import java.io.IOException;
 public class AccessTokenUtil {
 
     //从微信后台拿到APPID和APPSECRET 并封装为常量
-    private static final String APPID = "wx28d0349b4838aa71";
-    private static final String APPSECRET = "dbf847f72aaadb4904e937e6fc30976d";
+    private static final String APPID = WeixinDeveloperPropertyUtil.getProperty("APPID");
+    private static final String APPSECRET = WeixinDeveloperPropertyUtil.getProperty("APPSECRET");
+
     private static final String ACCESS_TOKEN_URL = "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=APPID&secret=APPSECRET";
 
     /**

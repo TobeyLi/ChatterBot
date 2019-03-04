@@ -24,12 +24,14 @@ public class WechatCoreController {
     @Autowired
     private SignatureCheckUtil signatureCheckUtil;
 
-
     @Autowired
     private WeiXinUserService weiXinUserService;
 
     @Autowired
     private DialogService dialogService;
+
+    @Autowired
+    private JPBridgeService jpBridgeService;
 
     @Autowired
     private TextMessageHandleService textMessageHandleService;
@@ -41,6 +43,7 @@ public class WechatCoreController {
      * @Create Date:
      */
 
+    //身份校验
     @RequestMapping(method= RequestMethod.GET)
     public void accessCheck(HttpServletRequest request, HttpServletResponse response)throws Exception {
 
@@ -133,7 +136,24 @@ public class WechatCoreController {
         String chatbotMessage = "";
         //使用数据库与机器人通信
         if("text".equals(MsgType)){
-            chatbotMessage=textMessageHandleService.dealTextMessage(textMessage);
+            //先查询数据库处理表中是否有此问题，有的话直接取;
+            // 如果问题包含需要执行的任务，则需要交给机器人处理
+            String excludeStr="天气";
+            int index=Content.indexOf(excludeStr);
+            JPBridge jpBridgeFromDB=null;
+            if(index==-1){
+                //用户要问的不是天气时,再看处理表
+                jpBridgeFromDB=jpBridgeService.queryOneByInputMessage(Content);
+            }
+            if(jpBridgeFromDB!=null){
+                //用户的问题在处理表中有同样的问题时，直接获取
+                chatbotMessage=jpBridgeFromDB.getResponseMessage();
+                //调用客服，将消息返回给微信用户
+                CallCustomerUtil.callCustomer(textMessage,chatbotMessage);
+            }else{
+                //用户的问题在处理表中没有时，调用机器人处理
+                chatbotMessage=textMessageHandleService.dealTextMessageByBot(textMessage);
+            }
         }
         Date responseTime = new Date();
         String responseTimeStr = simpleDateFormat.format(responseTime);
@@ -149,12 +169,13 @@ public class WechatCoreController {
         }
         dialogService.insertDialog(chatDialog);
 
-        String error="响应超时，请稍候再试.";
+        //暂时手动重启吧
+        /*String error="响应超时，请稍候再试.";
         if(chatbotMessage==error){
             //重启聊天模块
-            RestartChatterUtil.reStartChatter();
+            RestartChatterUtil.restartChatter();
             return;
-        }
+        }*/
 
     }
 }

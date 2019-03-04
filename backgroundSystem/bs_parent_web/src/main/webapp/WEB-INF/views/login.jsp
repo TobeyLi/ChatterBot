@@ -96,9 +96,9 @@
     		 "password" : password
     	 },
     	 beforeSend : function(){
-    	 loadingIndex = layer.msg('处理中', {icon: 16});
-    		 
-    	 },
+             loadingIndex = layer.msg('处理中', {icon: 16});
+
+         },
     	 success : function(result){
     		 layer.close(loadingIndex); 
     		// alert(result);

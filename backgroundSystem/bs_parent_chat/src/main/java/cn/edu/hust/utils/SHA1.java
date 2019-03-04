@@ -33,7 +33,9 @@ public final class SHA1 {
 
         // 把密文转换成十六进制的字符串形式
         for (int j = 0; j < len; j++) {
+            //右移4位，然后与十六进制的15做与运算
             buf.append(HEX_DIGITS[(bytes[j] >> 4) & 0x0f]);
+            //直接与十六进制的15做与运算
             buf.append(HEX_DIGITS[bytes[j] & 0x0f]);
         }
         return buf.toString();

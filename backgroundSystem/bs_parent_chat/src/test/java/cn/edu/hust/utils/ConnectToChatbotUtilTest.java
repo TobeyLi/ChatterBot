@@ -6,10 +6,14 @@ public class ConnectToChatbotUtilTest {
 
     public static void main(String[] args) throws InterruptedException, IOException {
         // TODO Auto-generated method stub
-        String python="D:\\developmentSoftware\\backEndDevelopment\\Python\\envs\\chatterbot\\Scripts\\python";
+
+        //获取key对应的value值
+        String python= PythonPropertyUtil.getProperty("pythonInterpreterPath");
+        String pythonScript= PythonPropertyUtil.getProperty("pythonScriptPath");
+
         String funcArg1="你好";
 
-        String[] execArgs = new String[]{ python, "E:\\GitHub\\gongChengShiJian\\chatbot3_0\\test.py",funcArg1};
+        String[] execArgs = new String[]{ python,pythonScript,funcArg1};
 
         String result = "";
 
@@ -17,16 +21,16 @@ public class ConnectToChatbotUtilTest {
 
         try {
 
-            BufferedReader in=new BufferedReader(new InputStreamReader(process.getInputStream(),"gbk"));
+            BufferedReader br=new BufferedReader(new InputStreamReader(process.getInputStream(),"gbk"));
 
             String line;
-            while ( (line=in.readLine()) != null){
+            while ( (line=br.readLine()) != null){
                 result+=line;
                 System.out.print(line);
             }
             System.out.println();
 
-            in.close();
+            br.close();
             process.waitFor();
 
         } catch (IOException e) {

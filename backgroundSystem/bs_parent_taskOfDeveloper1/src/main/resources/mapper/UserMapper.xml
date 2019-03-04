@@ -40,6 +40,7 @@
    delete from user
    where userId=#{userId}
 </delete>
+
   <delete id="deleteusers">
     delete from user where userId in
     <foreach collection="userIds" item="userId" open="(" close=")" separator=",">

@@ -7,15 +7,109 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c4061b6b-15e7-480c-bee9-ac2d67b7061f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bs_parent_chat/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bs_parent_chat/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/controller/WechatCoreController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/controller/WechatCoreController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/dao/JPBridgeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/dao/JPBridgeDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/service/JPBridgeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/service/JPBridgeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/service/TextMessageHandleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/service/TextMessageHandleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/serviceImpl/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/utils/CustomerMessageInterfaceUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/serviceImpl/JPBridgeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/serviceImpl/JPBridgeServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/serviceImpl/TextMessageHandleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/serviceImpl/TextMessageHandleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/utils/AccessTokenUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/utils/AccessTokenUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/utils/ConnectToChatbotUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/utils/ConnectToChatbotUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/utils/RestartChatterUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/utils/RestartChatterUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/utils/SHA1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/utils/SHA1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/utils/SignatureCheckUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/utils/SignatureCheckUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/utils/TextMessageCallableHandleThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/utils/TextMessageCallableHandleThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/utils/TextMessageCallableHandleThread1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/utils/TextMessageCallableHandleThread1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bs_parent_chat/src/main/resources/mapper/JPBridgeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bs_parent_chat/src/main/resources/mapper/JPBridgeMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bs_parent_chat/src/test/java/cn/edu/hust/utils/ConnectToChatbotUtilTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bs_parent_chat/src/test/java/cn/edu/hust/utils/ConnectToChatbotUtilTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bs_parent_chat/src/test/java/cn/edu/hust/utils/StartChatbot.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bs_parent_chat/src/test/java/cn/edu/hust/utils/StartChatbot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bs_parent_taskOfDeveloper1/src/main/java/cn/edu/hust/dao/UserDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bs_parent_taskOfDeveloper1/src/main/java/cn/edu/hust/service/LoginService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bs_parent_taskOfDeveloper1/src/main/java/cn/edu/hust/service/OperationFlowService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bs_parent_taskOfDeveloper1/src/main/java/cn/edu/hust/service/UserManageService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bs_parent_taskOfDeveloper1/src/main/java/cn/edu/hust/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bs_parent_taskOfDeveloper1/src/main/java/cn/edu/hust/serviceImpl/LoginServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bs_parent_taskOfDeveloper1/src/main/java/cn/edu/hust/serviceImpl/OperationFlowServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bs_parent_taskOfDeveloper1/src/main/java/cn/edu/hust/serviceImpl/UserManageServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bs_parent_taskOfDeveloper1/src/main/java/cn/edu/hust/serviceImpl/UserServiceImpl.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../bs_parent_taskOfDeveloper1/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bs_parent_taskOfDeveloper1/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bs_parent_web/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../bs_parent_web/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bs_parent_web/src/main/java/cn/edu/hust/controller/DialogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bs_parent_taskOfDeveloper2/src/main/java/cn/edu/hust/controller/DialogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bs_parent_web/src/main/java/cn/edu/hust/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bs_parent_taskOfDeveloper1/src/main/java/cn/edu/hust/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bs_parent_web/src/main/java/cn/edu/hust/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bs_parent_taskOfDeveloper1/src/main/java/cn/edu/hust/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bs_parent_web/src/main/java/cn/edu/hust/controller/WeiXinUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bs_parent_taskOfDeveloper2/src/main/java/cn/edu/hust/controller/WeiXinUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bs_parent_web/src/main/java/cn/edu/hust/controller/WorkReportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bs_parent_taskOfDeveloper2/src/main/java/cn/edu/hust/controller/WorkReportController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bs_parent_web/src/main/resources/conf_spring/db1_config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../bs_parent_web/src/main/resources/conf_spring/db1_config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bs_parent_web/src/main/webapp/WEB-INF/views/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../bs_parent_web/src/main/webapp/WEB-INF/views/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql/chatterbot.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chatterbot/Q&amp;A_corpus/1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chatterbot/Q&amp;A_corpus/10.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chatterbot/Q&amp;A_corpus/11.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chatterbot/Q&amp;A_corpus/12.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chatterbot/Q&amp;A_corpus/13.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chatterbot/Q&amp;A_corpus/14.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chatterbot/Q&amp;A_corpus/15.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chatterbot/Q&amp;A_corpus/16.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chatterbot/Q&amp;A_corpus/17.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chatterbot/Q&amp;A_corpus/18.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chatterbot/Q&amp;A_corpus/19.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chatterbot/Q&amp;A_corpus/2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chatterbot/Q&amp;A_corpus/20.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chatterbot/Q&amp;A_corpus/21.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chatterbot/Q&amp;A_corpus/22.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chatterbot/Q&amp;A_corpus/23.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chatterbot/Q&amp;A_corpus/24.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chatterbot/Q&amp;A_corpus/25.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chatterbot/Q&amp;A_corpus/26.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chatterbot/Q&amp;A_corpus/27.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chatterbot/Q&amp;A_corpus/28.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chatterbot/Q&amp;A_corpus/29.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chatterbot/Q&amp;A_corpus/3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chatterbot/Q&amp;A_corpus/30.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chatterbot/Q&amp;A_corpus/31.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chatterbot/Q&amp;A_corpus/32.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chatterbot/Q&amp;A_corpus/33.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chatterbot/Q&amp;A_corpus/34.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chatterbot/Q&amp;A_corpus/35.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chatterbot/Q&amp;A_corpus/36.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chatterbot/Q&amp;A_corpus/37.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chatterbot/Q&amp;A_corpus/38.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chatterbot/Q&amp;A_corpus/39.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chatterbot/Q&amp;A_corpus/4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chatterbot/Q&amp;A_corpus/40.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chatterbot/Q&amp;A_corpus/41.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chatterbot/Q&amp;A_corpus/42.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chatterbot/Q&amp;A_corpus/43.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chatterbot/Q&amp;A_corpus/44.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chatterbot/Q&amp;A_corpus/45.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chatterbot/Q&amp;A_corpus/5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chatterbot/Q&amp;A_corpus/6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chatterbot/Q&amp;A_corpus/7.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chatterbot/Q&amp;A_corpus/8.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chatterbot/Q&amp;A_corpus/9.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chatterbot/corpus/001.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chatterbot/corpus/002.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chatterbot/corpus/003.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chatterbot/corpus/004.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chatterbot/corpus/005.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chatterbot/corpus/006.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chatterbot/corpus/007.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chatterbot/corpus/008.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chatterbot/corpus/009.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chatterbot/corpus/010.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chatterbot/corpus/011.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chatterbot/corpus/012.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chatterbot/data/qingyun.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chatterbot/data/qingyun_seg.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chatterbot/jieba_dict/dict.txt.big" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chatterbot/jieba_dict/stopwords.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chatterbot/qingyun_segment.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chatterbot/save/word2vec.model" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chatterbot/train.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chatterbot/word_div.py" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/../bs_parent_common/target/" />
@@ -49,11 +143,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/controller/WechatCoreController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-237">
-              <caret line="50" column="53" selection-start-line="50" selection-start-column="53" selection-end-line="50" selection-end-column="53" />
+            <state relative-caret-position="2">
+              <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/utils/SHA1.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-216">
+              <caret line="22" column="45" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/serviceImpl/TextMessageHandleServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="720">
+              <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -62,85 +177,59 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../bs_parent_common/src/main/java/cn/edu/hust/dao/DialogDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-108">
-              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../bs_parent_common/src/main/java/cn/edu/hust/dao/WeiXinUserDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../bs_parent_common/src/main/java/cn/edu/hust/service/DialogService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../bs_parent_common/src/main/java/cn/edu/hust/service/WeiXinUserService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-155">
-              <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../bs_parent_common/src/main/java/cn/edu/hust/serviceImpl/DialogServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../bs_parent_common/src/main/java/cn/edu/hust/serviceImpl/WeiXinUserServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-443">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../bs_parent_common/src/main/java/cn/edu/hust/utils/DialogUtil.java">
+        <entry file="file://$PROJECT_DIR$/../bs_parent_chat/src/test/java/cn/edu/hust/utils/StartChatbot.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="108">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../bs_parent_common/src/main/java/cn/edu/hust/utils/UUIDUtil.java">
+        <entry file="file://$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/service/JPBridgeService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+            <state relative-caret-position="504">
+              <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../bs_parent_web/src/main/java/cn/edu/hust/controller/WeiXinUserController.java">
+        <entry file="file://$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/serviceImpl/JPBridgeServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+            <state relative-caret-position="900">
+              <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
+              <folding>
+                <element signature="e#889#890#0" expanded="true" />
+                <element signature="e#928#929#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/dao/JPBridgeDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="504">
+              <caret line="14" column="18" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../bs_parent_chat/src/main/resources/mapper/JPBridgeMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../bs_parent_taskOfDeveloper1/src/main/resources/mapper/UserMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="9" column="62" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="62" />
             </state>
           </provider>
         </entry>
@@ -188,25 +277,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../bs_parent_taskOfDeveloper2/src/main/resources/mapper/WorkReportMapper.xml" />
-        <option value="$PROJECT_DIR$/../bs_parent_taskOfDeveloper2/src/main/java/cn/edu/hust/service/WorkReportService.java" />
-        <option value="$PROJECT_DIR$/../bs_parent_taskOfDeveloper2/src/main/java/cn/edu/hust/service/DialogService.java" />
-        <option value="$PROJECT_DIR$/../bs_parent_taskOfDeveloper2/src/main/java/cn/edu/hust/serviceImpl/DialogServiceImpl.java" />
-        <option value="$PROJECT_DIR$/../bs_parent_taskOfDeveloper2/src/main/java/cn/edu/hust/dao/DialogDao.java" />
-        <option value="$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/serviceImpl/TextMessageHandle1.java" />
-        <option value="$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/serviceImpl/TextMessageRunableHandle.java" />
-        <option value="$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/serviceImpl/TextMessageCallableHandle.java" />
-        <option value="$PROJECT_DIR$/../bs_parent_taskOfDeveloper2/src/main/resources/mapper/DialogMapper.xml" />
-        <option value="$PROJECT_DIR$/../bs_parent_common/src/main/java/cn/edu/hust/bean/ChatDialog.java" />
-        <option value="$PROJECT_DIR$/../bs_parent_common/src/main/java/cn/edu/hust/bean/WeiXinUser.java" />
-        <option value="$PROJECT_DIR$/../bs_parent_common/src/main/java/cn/edu/hust/service/WeiXinUserService.java" />
-        <option value="$PROJECT_DIR$/../bs_parent_common/src/main/java/cn/edu/hust/serviceImpl/WeiXinUserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/../bs_parent_common/src/main/resources/mapper/WeiXinUserMapper.xml" />
-        <option value="$PROJECT_DIR$/../bs_parent_common/src/main/java/cn/edu/hust/dao/WeiXinUserDao.java" />
-        <option value="$PROJECT_DIR$/../bs_parent_web/src/main/webapp/WEB-INF/views/user/weixin_user.jsp" />
-        <option value="$PROJECT_DIR$/../bs_parent_web/src/main/java/cn/edu/hust/controller/WeiXinUserController.java" />
-        <option value="$PROJECT_DIR$/../bs_parent_web/src/main/resources/conf_spring/springmvc_context.xml" />
-        <option value="$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/utils/TextMessageHandleThread.java" />
         <option value="$PROJECT_DIR$/../bs_parent_common/src/main/java/cn/edu/hust/utils/DialogUtil.java" />
         <option value="$PROJECT_DIR$/../bs_parent_common/src/test/java/cn/edu/hust/utils/UUIDUtilTest.java" />
         <option value="$PROJECT_DIR$/../bs_parent_common/src/main/java/cn/edu/hust/utils/UUIDUtil.java" />
@@ -218,11 +288,8 @@
         <option value="$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/utils/TextMessageCallableHandleThread1.java" />
         <option value="$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/serviceImpl/CustomerServiceImpl.java" />
         <option value="$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/serviceImpl/TextMessageHandle.java" />
-        <option value="$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/service/TextMessageHandleService.java" />
         <option value="$PROJECT_DIR$/../bs_parent_common/src/main/java/cn/edu/hust/bean/JPBridge.java" />
         <option value="$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/utils/JPBridgeUtil.java" />
-        <option value="$PROJECT_DIR$/../bs_parent_chat/src/test/java/cn/edu/hust/utils/StartChatbot.java" />
-        <option value="$PROJECT_DIR$/../bs_parent_chat/src/test/java/cn/edu/hust/utils/ConnectToChatbotUtilTest.java" />
         <option value="$PROJECT_DIR$/../bs_parent_web/src/main/webapp/css/shouye.css" />
         <option value="$PROJECT_DIR$/../bs_parent_web/src/main/webapp/WEB-INF/views/workReport/index.jsp" />
         <option value="$PROJECT_DIR$/../bs_parent_web/src/main/webapp/WEB-INF/views/user/index.jsp" />
@@ -230,15 +297,37 @@
         <option value="$PROJECT_DIR$/../bs_parent_web/src/main/webapp/WEB-INF/views/shouye.jsp" />
         <option value="$PROJECT_DIR$/../bs_parent_web/src/main/webapp/WEB-INF/views/dialog/index.jsp" />
         <option value="$PROJECT_DIR$/../bs_parent_web/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/../bs_parent_web/src/main/java/cn/edu/hust/listener/SeverStartUpListener.java" />
+        <option value="$PROJECT_DIR$/../bs_parent_web/src/main/resources/conf_spring/db1_config.properties" />
+        <option value="$PROJECT_DIR$/../bs_parent_web/src/main/webapp/WEB-INF/views/login.jsp" />
+        <option value="$PROJECT_DIR$/../bs_parent_chat/src/main/resources/utils/pythonPath.properties" />
+        <option value="$PROJECT_DIR$/../bs_parent_chat/src/test/resources/python.properties" />
+        <option value="$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/utils/RestartChatterUtil.java" />
+        <option value="$PROJECT_DIR$/../bs_parent_chat/src/test/java/cn/edu/hust/utils/ConnectToChatbotUtilTest.java" />
+        <option value="$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/utils/PropertyUtil.java" />
+        <option value="$PROJECT_DIR$/../bs_parent_chat/src/main/resources/utils/python.properties" />
+        <option value="$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/utils/PythonPropertyUtil.java" />
+        <option value="$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/utils/WeixinDeveloperPropertyUtil.java" />
+        <option value="$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/utils/AccessTokenUtil.java" />
+        <option value="$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/utils/ConnectToChatbotUtil.java" />
+        <option value="$PROJECT_DIR$/../bs_parent_chat/src/test/java/cn/edu/hust/utils/StartChatbot.java" />
+        <option value="$PROJECT_DIR$/../bs_parent_chat/src/main/resources/weixin/weixinDeveloper.properties" />
+        <option value="$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/utils/SignatureCheckUtil.java" />
+        <option value="$PROJECT_DIR$/../bs_parent_web/src/main/java/cn/edu/hust/controller/WeiXinUserController.java" />
+        <option value="$PROJECT_DIR$/../bs_parent_chat/pom.xml" />
+        <option value="$PROJECT_DIR$/../bs_parent_taskOfDeveloper2/src/main/java/cn/edu/hust/controller/DialogController.java" />
+        <option value="$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/serviceImpl/CustomerMessageInterfaceUtil.java" />
+        <option value="$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/utils/CustomerMessageInterfaceUtil.java" />
+        <option value="$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/utils/CallCustomerUtil.java" />
+        <option value="$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/service/TextMessageHandleService.java" />
         <option value="$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/service/JPBridgeService.java" />
         <option value="$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/serviceImpl/JPBridgeServiceImpl.java" />
         <option value="$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/dao/JPBridgeDao.java" />
         <option value="$PROJECT_DIR$/../bs_parent_taskOfDeveloper1/src/main/resources/mapper/UserMapper.xml" />
-        <option value="$PROJECT_DIR$/../bs_parent_chat/src/main/resources/mapper/JPBridgeMapper.xml" />
-        <option value="$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/utils/RestartChatterUtil.java" />
-        <option value="$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/serviceImpl/TextMessageHandleServiceImpl.java" />
-        <option value="$PROJECT_DIR$/../bs_parent_web/src/main/java/cn/edu/hust/listener/SeverStartUpListener.java" />
         <option value="$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/controller/WechatCoreController.java" />
+        <option value="$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/serviceImpl/TextMessageHandleServiceImpl.java" />
+        <option value="$PROJECT_DIR$/../bs_parent_chat/src/main/resources/mapper/JPBridgeMapper.xml" />
+        <option value="$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/utils/SHA1.java" />
       </list>
     </option>
   </component>
@@ -278,9 +367,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-77" />
-    <option name="y" value="20" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-116" />
+    <option name="y" value="47" />
     <option name="width" value="1382" />
     <option name="height" value="784" />
   </component>
@@ -291,8 +380,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -332,49 +419,21 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bs_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bs_parent_web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bs_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bs_parent_web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bs_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bs_parent_web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bs_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bs_parent_web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bs_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bs_parent_web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551432508062" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551702509860" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../bs_parent_web/src/main/webapp/WEB-INF/web.xml" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -383,15 +442,18 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.36551723" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="cn.edu.hust.utils" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\GitHub\gongChengShiJian\ChatterBot\backgroundSystem\bs_parent_chat\src\test\resources" />
       <recent name="E:\GitHub\gongChengShiJian\ChatterBot\backgroundSystem\bs_parent_chat\src\main\resources\mapper" />
       <recent name="E:\GitHub\gongChengShiJian\ChatterBot\backgroundSystem\bs_parent_web\src\main\webapp\WEB-INF\views\user" />
       <recent name="E:\GitHub\gongChengShiJian\ChatterBot\backgroundSystem\bs_parent_common\src\main\resources\mapper" />
       <recent name="E:\GitHub\gongChengShiJian\ChatterBot\backgroundSystem\bs_parent_chat\src\main\java\cn\edu\hust\controller" />
-      <recent name="E:\GitHub\gongChengShiJian\ChatterBot\backgroundSystem\bs_parent_web\src\main\webapp\js" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="cn.edu.hust.serviceImpl" />
@@ -657,11 +719,19 @@
       <workItem from="1551404531511" duration="5050000" />
       <workItem from="1551410602145" duration="961000" />
       <workItem from="1551420833992" duration="8279000" />
+      <workItem from="1551592601522" duration="11884000" />
+      <workItem from="1551625250306" duration="6421000" />
+      <workItem from="1551662174297" duration="862000" />
+      <workItem from="1551665192917" duration="2171000" />
+      <workItem from="1551680508878" duration="9307000" />
+      <workItem from="1551695254049" duration="7064000" />
+      <workItem from="1551703106616" duration="1390000" />
+      <workItem from="1551705351221" duration="1945000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="422214000" />
+    <option name="totallyTimeSpent" value="463258000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -673,9 +743,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-77" y="20" width="1382" height="784" extended-state="0" />
+    <frame x="-116" y="47" width="1382" height="784" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24130106" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12254161" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -685,8 +755,8 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.1923077" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.44153845" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.14923076" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.21538462" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.33846155" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3276923" />
@@ -699,53 +769,18 @@
       <window_info anchor="bottom" id="Version Control" order="13" weight="0.3276923" />
       <window_info anchor="bottom" id="Spring" order="14" weight="0.3276923" />
       <window_info anchor="bottom" id="Application Servers" order="15" weight="0.3276923" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" sideWeight="0.49122807" weight="0.32980332" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Coverage" order="9" sideWeight="0.50877196" side_tool="true" weight="0.32980332" />
+      <window_info anchor="right" x="0" y="0" width="295" height="584" id="Documentation" order="0" side_tool="true" weight="0.32980332" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.24962178" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="4" sideWeight="0.49122807" weight="0.32980332" />
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" id="Coverage" order="10" sideWeight="0.50877196" side_tool="true" weight="0.32980332" />
     </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.23373677" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.1923077" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.17076923" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.14923076" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3276923" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3276923" />
-      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32923076" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.14461538" />
-      <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32923076" />
-      <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info anchor="bottom" id="Version Control" order="13" weight="0.3276923" />
-      <window_info anchor="bottom" id="Spring" order="14" weight="0.3276923" />
-      <window_info anchor="bottom" id="Application Servers" order="15" weight="0.3276923" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" sideWeight="0.49122807" weight="0.32980332" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Coverage" order="9" sideWeight="0.50877196" side_tool="true" weight="0.32980332" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -758,12 +793,6 @@
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/serviceImpl/TextMessageRunableHandle.java</url>
-          <line>50</line>
-          <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -772,230 +801,87 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../bs_parent_chat/src/test/java/cn/edu/hust/utils/StartChatbot.java">
+    <entry file="file://$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/service/CustomerService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="19" column="26" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="19" selection-end-column="26" />
+        <state relative-caret-position="72">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/serviceImpl/TextMessageHandleServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/../bs_parent_chat/src/main/resources/utils/python.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state>
+          <caret column="21" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/dao/JPBridgeDao.java">
+    <entry file="file://$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/bean/AccessToken.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+        <state relative-caret-position="-229">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/bean/Image.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/bean/BaseMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/bean/VoiceMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bs_parent_chat/src/main/resources/weixin/weixinDeveloper.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="2" column="10" lean-forward="true" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/utils/AccessTokenThread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/utils/RestartChatterUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-648">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/utils/WeiXinUserInfoUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../bs_parent_taskOfDeveloper1/src/main/java/cn/edu/hust/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-110">
-          <caret line="21" column="24" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../bs_parent_taskOfDeveloper1/src/main/java/cn/edu/hust/serviceImpl/LoginServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
+        <state relative-caret-position="-828">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../bs_parent_taskOfDeveloper1/src/main/java/cn/edu/hust/serviceImpl/OperationFlowServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../bs_parent_taskOfDeveloper1/src/main/java/cn/edu/hust/serviceImpl/UserManageServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../bs_parent_taskOfDeveloper1/src/main/java/cn/edu/hust/serviceImpl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-278">
-          <caret line="54" column="25" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../bs_parent_taskOfDeveloper1/src/main/java/cn/edu/hust/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-468">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../bs_parent_taskOfDeveloper1/src/main/resources/mapper/UserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-220">
-          <caret line="38" column="28" lean-forward="true" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../bs_parent_taskOfDeveloper2/src/main/java/cn/edu/hust/service/WorkReportService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-26">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../bs_parent_web/src/main/resources/conf_spring/db2_config.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../bs_parent_web/src/main/resources/conf_spring/spring_context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-360" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../bs_parent_web/src/main/resources/conf_spring/springmvc_context.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../bs_parent_web/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2952" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../bs_parent_web/src/main/java/cn/edu/hust/listener/SeverStartUpListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="22" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../bs_parent_web/src/main/java/cn/edu/hust/controller/DialogController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1357">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../bs_parent_web/src/main/java/cn/edu/hust/controller/WorkReportController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1019">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../bs_parent_web/src/main/java/cn/edu/hust/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../bs_parent_web/src/main/java/cn/edu/hust/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-386">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../bs_parent_web/src/main/java/cn/edu/hust/listener/AuthInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../bs_parent_web/src/main/java/cn/edu/hust/listener/LoginInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-504">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../bs_parent_web/src/main/webapp/chatbot/getAccessToken.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../bs_parent_web/src/main/webapp/images_justForTest/test1.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../bs_parent_web/src/main/webapp/WEB-INF/views/forTest.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../bs_parent_web/src/main/webapp/WEB-INF/views/forward.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="3" column="10" lean-forward="true" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../bs_parent_web/src/main/webapp/WEB-INF/views/shouye.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="32" column="45" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../bs_parent_web/src/main/webapp/WEB-INF/views/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="5" column="50" lean-forward="true" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/utils/AccessTokenUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        <state relative-caret-position="36">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/utils/BaseMessageUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        <state relative-caret-position="-400">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/utils/ConnectToChatbotUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="29" column="29" lean-forward="true" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
+        <state relative-caret-position="-108">
+          <caret line="11" column="28" lean-forward="true" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/utils/ConnectWeiXinInterfaceThread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="72">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1006,117 +892,284 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/utils/JPBridgeUtil.java">
+    <entry file="file://$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/utils/MessageUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-21">
-          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/utils/SHA1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1091">
-          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/utils/SignatureCheckUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-971">
-          <caret line="9" column="44" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="44" />
+        <state relative-caret-position="36">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/utils/TextMessageCallableHandleThread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="27" column="26" lean-forward="true" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-432">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/utils/TextMessageCallableHandleThread1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-792">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/utils/TextMessageUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
+        <state relative-caret-position="252">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../bs_parent_common/src/main/java/cn/edu/hust/dao/DialogDao.java">
+    <entry file="file://$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/utils/WeixinDeveloperPropertyUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-108">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        <state relative-caret-position="-288">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../bs_parent_common/src/main/java/cn/edu/hust/dao/WeiXinUserDao.java">
+    <entry file="file://$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/utils/WeiXinUserInfoUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+        <state relative-caret-position="-900">
+          <caret line="18" column="58" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="58" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../bs_parent_common/src/main/java/cn/edu/hust/service/DialogService.java">
+    <entry file="file://$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/serviceImpl/TextMessageCallableHandle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
+        <state relative-caret-position="144">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/service/WechatCoreService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/serviceImpl/TextMessageRunableHandle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/serviceImpl/WechatCoreServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/controller/AccessTokenServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bs_parent_taskOfDeveloper1/src/main/java/cn/edu/hust/controller.java" />
+    <entry file="file://$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/utils/SignatureCheckUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bs_parent_taskOfDeveloper1/src/main/java/cn/edu/hust/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bs_parent_taskOfDeveloper1/src/main/java/cn/edu/hust/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bs_parent_web/src/main/resources/conf_spring/spring_context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1872" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bs_parent_web/src/main/resources/conf_spring/springmvc_context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bs_parent_taskOfDeveloper1/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bs_parent_taskOfDeveloper2/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bs_parent_taskOfDeveloper1/src/main/java/cn/edu/hust/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-86">
           <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../bs_parent_common/src/main/java/cn/edu/hust/service/WeiXinUserService.java">
+    <entry file="file://$PROJECT_DIR$/../bs_parent_taskOfDeveloper2/src/main/java/cn/edu/hust/controller/WeiXinUserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-155">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        <state relative-caret-position="171">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../bs_parent_common/src/main/java/cn/edu/hust/serviceImpl/DialogServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/../bs_parent_taskOfDeveloper2/src/main/java/cn/edu/hust/controller/WorkReportController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        <state relative-caret-position="179">
+          <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../bs_parent_common/src/main/java/cn/edu/hust/serviceImpl/WeiXinUserServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-443">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        <state relative-caret-position="-7241" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bs_parent_chat/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1980">
+          <caret line="75" column="32" lean-forward="true" selection-start-line="75" selection-start-column="32" selection-end-line="75" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../bs_parent_common/src/main/java/cn/edu/hust/utils/DialogUtil.java">
+    <entry file="file://$PROJECT_DIR$/../bs_parent_taskOfDeveloper2/src/main/java/cn/edu/hust/controller/DialogController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
+        <state relative-caret-position="976">
+          <caret line="134" column="5" lean-forward="true" selection-start-line="134" selection-start-column="5" selection-end-line="134" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/service/TextMessageHandleService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
           <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../bs_parent_common/src/main/java/cn/edu/hust/utils/UUIDUtil.java">
+    <entry file="file://$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/utils/CallCustomerUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+        <state relative-caret-position="285">
+          <caret line="15" column="40" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../bs_parent_web/src/main/java/cn/edu/hust/controller/WeiXinUserController.java">
+    <entry file="file://$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/utils/CustomerMessageInterfaceUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        <state relative-caret-position="91">
+          <caret line="12" column="23" lean-forward="true" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.4.RELEASE/spring-web-5.1.4.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1985">
+          <caret line="101" selection-start-line="101" selection-end-line="101" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/controller/WechatCoreController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-237">
-          <caret line="50" column="53" selection-start-line="50" selection-start-column="53" selection-end-line="50" selection-end-column="53" />
+        <state relative-caret-position="2">
+          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/serviceImpl/TextMessageHandleServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bs_parent_chat/src/test/java/cn/edu/hust/utils/StartChatbot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/service/JPBridgeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/serviceImpl/JPBridgeServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
+          <folding>
+            <element signature="e#889#890#0" expanded="true" />
+            <element signature="e#928#929#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/dao/JPBridgeDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bs_parent_chat/src/main/resources/mapper/JPBridgeMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bs_parent_taskOfDeveloper1/src/main/resources/mapper/UserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="9" column="62" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bs_parent_chat/src/main/java/cn/edu/hust/utils/SHA1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-216">
+          <caret line="22" column="45" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="45" />
         </state>
       </provider>
     </entry>
@@ -1174,7 +1227,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>bs_parent_common</last-edited>
+          <last-edited>bs_parent_chat</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

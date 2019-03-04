@@ -5,11 +5,16 @@ import java.io.IOException;
 public class StartChatbot {
 
     public static void main(String[] args) throws IOException, InterruptedException {
-        // TODO Auto-generated method stub
-        String python="D:\\developmentSoftware\\backEndDevelopment\\Python\\envs\\chatterbot\\Scripts\\python";
+
+        //获取key对应的value值
+        String python= PythonPropertyUtil.getProperty("pythonInterpreterPath");
+        //System.out.println("python:"+python);
+        String pythonScript= PythonPropertyUtil.getProperty("pythonScriptPath");
+        //System.out.println("pythonScript:"+pythonScript);
+
         String funcArg1="你好";
 
-        String[] execArgs = new String[]{ python, "E:\\GitHub\\gongChengShiJian\\chatbot3_0\\JPBridge_test.py",funcArg1};
+        String[] execArgs = new String[]{ python,pythonScript,funcArg1};
 
         String result = "";
 

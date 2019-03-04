@@ -7,6 +7,13 @@
         select * from jp_bridge where uuid=#{uuid}
     </select>
 
+    <!--<select id="queryOneByInputMessage" resultType="cn.edu.hust.bean.JPBridge">
+        select * from jp_bridge where inputMessage like concat('%',#{inputMessage},'%') and solved=1 order by jpid DESC limit 1
+    </select>-->
+    <select id="queryOneByInputMessage" resultType="cn.edu.hust.bean.JPBridge">
+        select * from jp_bridge where inputMessage=#{inputMessage} and solved=1 order by jpid DESC limit 1
+    </select>
+
     <insert id="insertJPBridge">
         insert into jp_bridge(uuid,inputMessage,responseMessage,solved)
         values(
@@ -19,5 +26,9 @@
         set solved=#{solved}
         where uuid=#{uuid}
     </update>
+
+    <delete id="deleteAll">
+        delete from jp_bridge
+    </delete>
 
 </mapper>

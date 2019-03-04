@@ -7,7 +7,7 @@ import java.util.Arrays;
 public class SignatureCheckUtil {
 
     //自己设置,要与微信页面设置的一致
-    public static final String token = "good";
+    public static final String token = WeixinDeveloperPropertyUtil.getProperty("Token");
 
     /**
      * 验证签名

@@ -13,14 +13,6 @@
         <module name="bs_parent_web" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="bs_common_chat" target="1.7" />
-      <module name="bs_common_portal" target="1.7" />
-      <module name="bs_common_taskOfDeveloper2" target="1.7" />
-      <module name="bs_comon" target="1.7" />
-      <module name="test" target="1.7" />
-      <module name="test1" target="1.7" />
-      <module name="test2" target="1.5" />
-    </bytecodeTargetLevel>
+    <bytecodeTargetLevel target="8" />
   </component>
 </project>

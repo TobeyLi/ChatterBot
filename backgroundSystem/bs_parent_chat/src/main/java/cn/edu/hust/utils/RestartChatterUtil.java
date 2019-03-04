@@ -4,12 +4,15 @@ import java.io.IOException;
 
 public class RestartChatterUtil {
 
-    public static void reStartChatter() {
+    public static void restartChatter() {
 
-        String python="D:\\developmentSoftware\\backEndDevelopment\\Python\\envs\\chatterbot\\Scripts\\python";
+        //获取key对应的value值
+        String python= PythonPropertyUtil.getProperty("pythonInterpreterPath");
+        String pythonScript= PythonPropertyUtil.getProperty("pythonScriptPath");
+
         String funcArg1="你好";
 
-        String[] execArgs = new String[]{ python, "E:\\GitHub\\gongChengShiJian\\chatbot3_0\\JPBridge_test.py",funcArg1};
+        String[] execArgs = new String[]{ python,pythonScript,funcArg1};
 
         String result = "";
 

@@ -115,7 +115,7 @@ public class DialogController {
     @RequestMapping("/deletes")
     public Object deletes(Integer[] chatId){
 
-        System.out.println("chatIds:"+chatId);
+        //System.out.println("chatIds:"+chatId);
 
         AJAXResult result=new AJAXResult();
 

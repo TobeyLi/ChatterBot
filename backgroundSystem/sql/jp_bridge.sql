@@ -11,45 +11,11 @@
  Target Server Version : 80012
  File Encoding         : 65001
 
- Date: 01/03/2019 11:12:07
+ Date: 03/03/2019 11:09:36
 */
 
 SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;
-
--- ----------------------------
--- Table structure for chat_dialog
--- ----------------------------
-DROP TABLE IF EXISTS `chat_dialog`;
-CREATE TABLE `chat_dialog`  (
-  `chatId` int(11) NOT NULL AUTO_INCREMENT,
-  `openid` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `nickname` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL DEFAULT NULL,
-  `inputMessage` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL DEFAULT NULL,
-  `keyword` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL DEFAULT NULL,
-  `sendTime` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL DEFAULT NULL,
-  `responseMessage` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL DEFAULT NULL,
-  `responseTime` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL DEFAULT NULL,
-  PRIMARY KEY (`chatId`) USING BTREE,
-  INDEX `chat_wxuser`(`openid`) USING BTREE,
-  CONSTRAINT `chat_wxuser` FOREIGN KEY (`openid`) REFERENCES `weixin_user` (`openid`) ON DELETE RESTRICT ON UPDATE CASCADE
-) ENGINE = InnoDB AUTO_INCREMENT = 24 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci ROW_FORMAT = Dynamic;
-
--- ----------------------------
--- Records of chat_dialog
--- ----------------------------
-INSERT INTO `chat_dialog` VALUES (56, 'o7l5N1KWFUnsqSFjUp7hVM8JS8Tw', 'Hiram He', '不错', NULL, '2019-02-28 19:19:50 下午', ' 谢谢', '2019-02-28 19:19:54 下午');
-INSERT INTO `chat_dialog` VALUES (60, 'o7l5N1KWFUnsqSFjUp7hVM8JS8Tw', 'Hiram He', '你是谁', NULL, '2019-02-28 20:31:31 下午', ' 神', '2019-02-28 20:31:38 下午');
-INSERT INTO `chat_dialog` VALUES (69, 'o7l5N1KWFUnsqSFjUp7hVM8JS8Tw', 'Hiram He', '吃鸡', NULL, '2019-02-28 20:48:12 下午', '响应超时，请稍候再试.', '2019-02-28 20:48:28 下午');
-INSERT INTO `chat_dialog` VALUES (70, 'o7l5N1KWFUnsqSFjUp7hVM8JS8Tw', 'Hiram He', '吃鸡', NULL, '2019-02-28 20:48:46 下午', NULL, '2019-02-28 20:48:56 下午');
-INSERT INTO `chat_dialog` VALUES (71, 'o7l5N1KWFUnsqSFjUp7hVM8JS8Tw', 'Hiram He', '回来啦', NULL, '2019-02-28 20:51:47 下午', ' 累了', '2019-02-28 20:51:51 下午');
-INSERT INTO `chat_dialog` VALUES (82, 'o7l5N1KWFUnsqSFjUp7hVM8JS8Tw', 'Hiram He', '手痛', NULL, '2019-02-28 20:55:55 下午', '响应超时，请稍候再试.', '2019-02-28 20:56:11 下午');
-INSERT INTO `chat_dialog` VALUES (85, 'o7l5N1KWFUnsqSFjUp7hVM8JS8Tw', 'Hiram He', '你好', NULL, '2019-02-28 22:03:14 下午', ' 我很好,你呢，你怎么样', '2019-02-28 22:03:23 下午');
-INSERT INTO `chat_dialog` VALUES (86, 'o7l5N1KWFUnsqSFjUp7hVM8JS8Tw', 'Hiram He', '早上好', NULL, '2019-02-28 22:03:29 下午', ' 嘿，早上好啊！', '2019-02-28 22:03:34 下午');
-INSERT INTO `chat_dialog` VALUES (87, 'o7l5N1KWFUnsqSFjUp7hVM8JS8Tw', 'Hiram He', '晚上好', NULL, '2019-02-28 22:03:59 下午', ' 晚上好～', '2019-02-28 22:04:04 下午');
-INSERT INTO `chat_dialog` VALUES (88, 'o7l5N1KWFUnsqSFjUp7hVM8JS8Tw', 'Hiram He', '中午好', NULL, '2019-02-28 22:04:09 下午', ' 嗨~', '2019-02-28 22:04:15 下午');
-INSERT INTO `chat_dialog` VALUES (89, 'o7l5N1KWFUnsqSFjUp7hVM8JS8Tw', 'Hiram He', '午饭吃什么', NULL, '2019-02-28 22:04:20 下午', ' 好多好多好吃的', '2019-02-28 22:04:25 下午');
-INSERT INTO `chat_dialog` VALUES (90, 'o7l5N1KWFUnsqSFjUp7hVM8JS8Tw', 'Hiram He', '好吃的', NULL, '2019-02-28 22:04:33 下午', ' 在爭鮮', '2019-02-28 22:04:38 下午');
 
 -- ----------------------------
 -- Table structure for jp_bridge
@@ -62,7 +28,7 @@ CREATE TABLE `jp_bridge`  (
   `responseMessage` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL DEFAULT NULL,
   `solved` int(1) UNSIGNED ZEROFILL NOT NULL DEFAULT 0,
   PRIMARY KEY (`jpid`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 85 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 142 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of jp_bridge
@@ -148,65 +114,62 @@ INSERT INTO `jp_bridge` VALUES (82, 'ea389ac0ffb64124baca6a9a920067eb', '好吃�
 INSERT INTO `jp_bridge` VALUES (83, 'ebc009ad4ac54d99bc13b51cada6bdd1', '台湾', ' 中国不可分割的一部分', 1);
 INSERT INTO `jp_bridge` VALUES (84, 'c9235315b11a4606bc72f720bc4509e2', '中国', ' 负二代是我爷爷', 1);
 INSERT INTO `jp_bridge` VALUES (85, '94add368069d43609d503ad582c9eca0', '美国', ' 欠钱还敢嚣张的魂淡', 1);
-
--- ----------------------------
--- Table structure for user
--- ----------------------------
-DROP TABLE IF EXISTS `user`;
-CREATE TABLE `user`  (
-  `userId` int(11) NOT NULL AUTO_INCREMENT,
-  `userName` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `password` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `realName` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL DEFAULT NULL,
-  `nickname` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL DEFAULT NULL,
-  `gender` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL DEFAULT NULL,
-  `phoneNumber` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL DEFAULT NULL,
-  `email` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL DEFAULT NULL,
-  PRIMARY KEY (`userId`) USING BTREE,
-  INDEX `userId`(`userId`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 11 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci ROW_FORMAT = Dynamic;
-
--- ----------------------------
--- Records of user
--- ----------------------------
-INSERT INTO `user` VALUES (1, 'hhm', 'hh', NULL, '何海', NULL, '13971474250', '123@123.com');
-INSERT INTO `user` VALUES (3, 'hhf', 'hhf', NULL, NULL, NULL, NULL, NULL);
-INSERT INTO `user` VALUES (9, 'sfsd', 'sdfsdf', NULL, NULL, NULL, NULL, NULL);
-INSERT INTO `user` VALUES (10, 'sjj', 'sjj', NULL, NULL, NULL, NULL, NULL);
-
--- ----------------------------
--- Table structure for weixin_user
--- ----------------------------
-DROP TABLE IF EXISTS `weixin_user`;
-CREATE TABLE `weixin_user`  (
-  `wxuid` int(11) NOT NULL AUTO_INCREMENT,
-  `subscribe` int(255) NULL DEFAULT NULL,
-  `openid` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `nickname` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL DEFAULT NULL,
-  `sex` int(255) NULL DEFAULT NULL,
-  `language` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL DEFAULT NULL,
-  `city` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL DEFAULT NULL,
-  `province` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL DEFAULT NULL,
-  `country` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL DEFAULT NULL,
-  `headimgurl` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL DEFAULT NULL,
-  `subscribe_time` bigint(20) NULL DEFAULT NULL,
-  `unionid` varbinary(255) NULL DEFAULT NULL,
-  `remark` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL DEFAULT NULL,
-  `groupid` int(11) NULL DEFAULT NULL,
-  `tagid_list` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL DEFAULT NULL,
-  `subscribe_scene` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL DEFAULT NULL,
-  `qr_scene` int(255) NULL DEFAULT NULL,
-  `qr_scene_str` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
-  PRIMARY KEY (`wxuid`) USING BTREE,
-  INDEX `openid`(`openid`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 11 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci ROW_FORMAT = Dynamic;
-
--- ----------------------------
--- Records of weixin_user
--- ----------------------------
-INSERT INTO `weixin_user` VALUES (2, 1, 'test', 'asd', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
-INSERT INTO `weixin_user` VALUES (4, 1, 'o7l5N1KWFUnsqSFjUp7hVM8JS8Tw', 'Hiram He', 1, 'en', '武汉', '湖北', '中国', 'http://thirdwx.qlogo.cn/mmopen/TZznQUbRDfXpRiayQRnoRxIOVmLdxmxEgkblO4ULqGW2grDTpkLZzCibJBUYIoJByckLKyn8YsUqCTL8kuMuhEheTVFETHhxab/132', 1550665499, NULL, '', 0, '[]', 'ADD_SCENE_QR_CODE', 0, '');
-INSERT INTO `weixin_user` VALUES (8, 1, 'o7l5N1JkVX0dMfilxpCu7DGTvc7k', 'Bugatti Chiron', 1, 'zh_CN', '', '柏林', '德国', 'http://thirdwx.qlogo.cn/mmopen/TZznQUbRDfULiaSiabUR7vd2eQ8GsHtL0DRWBicOa9AKWf1aeTbibP69NdASplfVs9cLIHvjeAHDdL5ibAXhhBNkgWia27p0ofkKdN/132', 1550796778, NULL, '', 0, '[]', 'ADD_SCENE_PROFILE_CARD', 0, '');
-INSERT INTO `weixin_user` VALUES (9, 1, 'o7l5N1A5CSXZBBn986FKjFkf4xQQ', '123～木头人', 1, 'en', '武汉', '湖北', '中国', 'http://thirdwx.qlogo.cn/mmopen/5aqMyxILRuy0wXESeJIibDdEldibujHUH9giaKXswRkMDBYyLGr1x1goSdb5ILAN4kjd01gjE8siaicFhsObfgyDe58zjAEQ33EwX/132', 1551076021, NULL, '', 0, '[]', 'ADD_SCENE_PROFILE_CARD', 0, '');
+INSERT INTO `jp_bridge` VALUES (86, '710d50682ae24c509610359f55f05796', '你好', ' 我很好,你呢，你怎么样', 1);
+INSERT INTO `jp_bridge` VALUES (87, '03a7dec6975b4db99458090952d19342', '你好', ' 我很好,你呢，你怎么样', 1);
+INSERT INTO `jp_bridge` VALUES (88, 'f73aac9ece4744a88cda771b2095b46c', '你好', ' 我很好,你呢，你怎么样', 1);
+INSERT INTO `jp_bridge` VALUES (89, '454a11db4d054e45abbbebdc6258b209', '你好', ' 我很好,你呢，你怎么样', 1);
+INSERT INTO `jp_bridge` VALUES (90, '823723cfbe75408393b1e6be160de7aa', '美国', ' 欠钱还敢嚣张的魂淡', 1);
+INSERT INTO `jp_bridge` VALUES (91, '5b2e550059e24f68a7afbeca1afff885', '国足', ' 主人一定是烧坏了', 1);
+INSERT INTO `jp_bridge` VALUES (92, '08190d8414d84ef0954af04ded7b6791', '傻子', ' 你笨蛋', 1);
+INSERT INTO `jp_bridge` VALUES (93, '497381a1f3394e80bd2dc7a90e8f9780', '蠢货', ' 蠢蛋', 1);
+INSERT INTO `jp_bridge` VALUES (94, 'df23a3a4309f4eeda7ec4d8239de2830', '叫爸爸', ' 爸爸', 1);
+INSERT INTO `jp_bridge` VALUES (95, '99208977078d4d45b34c6f1d343f771b', '英国', ' 专属毛子永远的爱', 1);
+INSERT INTO `jp_bridge` VALUES (96, 'd4e8ba5d46634ff4b0a5dc8073cf15cd', '医院', ' 不错。。。', 1);
+INSERT INTO `jp_bridge` VALUES (97, 'e2a2d3c9390542a5bf0e27198d0f04b8', '学校', ' 哦哦，那你好好读书咯', 1);
+INSERT INTO `jp_bridge` VALUES (98, '3a1811a01ebf4257bfbed845e0667724', '感冒了', ' 快去找点药吃吧，别拖着', 1);
+INSERT INTO `jp_bridge` VALUES (99, 'ec819ae1fbf84f10afba8a21d9272943', '白加黑', ' 无法理解您的话，获取帮助请发送 help', 1);
+INSERT INTO `jp_bridge` VALUES (100, '658b3b0b9f0e453086022a266136b2ee', 'help', ' 你说个“hll”是什么意思', 1);
+INSERT INTO `jp_bridge` VALUES (101, 'b5101622c7414a6f8d23b49118f20207', '不舒服', ' 啊，哪里不舒服，要不要去看医生啊', 1);
+INSERT INTO `jp_bridge` VALUES (102, 'f192e5648dfd4fa5a46e808639e34923', '肚子', ' 都是拾忆的', 1);
+INSERT INTO `jp_bridge` VALUES (103, 'ef880285fcf847ffa28c00b1f9651ec5', '我头疼', ' 睡觉觉吧', 1);
+INSERT INTO `jp_bridge` VALUES (104, 'd5dbd257d4c64dd9aa838c7bfb70f533', '肚子疼', ' 姨妈来了吗', 1);
+INSERT INTO `jp_bridge` VALUES (105, '9e77c7a9749d40a29eb8ae61cdbd1202', '我肚子疼', ' 自己在角落里多捂捂，', 1);
+INSERT INTO `jp_bridge` VALUES (106, '376b93a8171c49dbac31c0d61ef0c6ef', '我屁股疼', ' 感激不尽', 1);
+INSERT INTO `jp_bridge` VALUES (107, '2296b8a5b9254b2baa5b03bd6e1ec6b7', '我菊花痒', ' 菊花本是一种挺好看的花，可惜被这个爆力的时代给摧残了', 1);
+INSERT INTO `jp_bridge` VALUES (108, '732b2e026a3842399864ebd850c1d39d', '流鼻涕', ' 懂了了捏~我见你够切咧哦！', 1);
+INSERT INTO `jp_bridge` VALUES (109, '2899f09189f64b7a8cf3a7d8492e27d4', '鼻塞', '听起来感觉像是感冒，建议前往耳鼻喉科去做更进一步的检查', 1);
+INSERT INTO `jp_bridge` VALUES (110, '7927f80cf0274101af23f3ed8d7a0dd8', '鼻炎', NULL, 2);
+INSERT INTO `jp_bridge` VALUES (111, '016eb9c255684d1ba038ee3735667ecd', '你好', ' 我很好,你呢，你怎么样', 1);
+INSERT INTO `jp_bridge` VALUES (112, '33f8af03469f438fb95199ab85f3d8e7', '你好', ' 我很好,你呢，你怎么样', 1);
+INSERT INTO `jp_bridge` VALUES (113, '15a08fe8f11e4bc8b36c7a2b06e02bd7', '你好', ' 我很好,你呢，你怎么样', 1);
+INSERT INTO `jp_bridge` VALUES (114, '89caa1eae54b4cf0bbc42043a2faa9cb', '你哈', ' 我错了', 1);
+INSERT INTO `jp_bridge` VALUES (115, '9332cdde2abb412fbd15ba477eb9af17', '鼻炎', NULL, 2);
+INSERT INTO `jp_bridge` VALUES (116, '1a45cd56518a43c7bf31656bf57d4de1', '你好', NULL, 2);
+INSERT INTO `jp_bridge` VALUES (117, '844144c84ff44bc299a59520fbdf555e', '你好', ' 我很好,你呢，你怎么样', 1);
+INSERT INTO `jp_bridge` VALUES (118, '52a22d77f76c487eb772b31175775015', '你好', ' 我很好,你呢，你怎么样', 1);
+INSERT INTO `jp_bridge` VALUES (119, '3bd6f06cb5d04a6d92ac39a565c2fcca', '美国', ' 欠钱还敢嚣张的魂淡', 1);
+INSERT INTO `jp_bridge` VALUES (120, '448cde753c4d42dcbdf2aaaa2c4398f8', '美国', ' 欠钱还敢嚣张的魂淡', 1);
+INSERT INTO `jp_bridge` VALUES (121, '92af5ac5c09b4cf78899a18508692621', '脚痛', NULL, 2);
+INSERT INTO `jp_bridge` VALUES (122, 'fb60545ddff244c0b867ff94d4610497', '你好', ' 我很好,你呢，你怎么样', 1);
+INSERT INTO `jp_bridge` VALUES (123, '25f68ed5471d4d1b915cb02e9a3d576c', '是吗', ' 当然，还用问么', 1);
+INSERT INTO `jp_bridge` VALUES (124, 'e29fcf0950e94ed086d13327275ecb41', '肚子痛', ' 经痛摸摸就好了', 1);
+INSERT INTO `jp_bridge` VALUES (125, 'a493e2d318924a7cb526bef3b822a3d8', '瞎说', ' 虽然是瞎说，不过，也蛮有道理的嘛', 1);
+INSERT INTO `jp_bridge` VALUES (126, '4ff81952a42c4555a06445fc062bb636', '你是真的蠢', ' 係，我認', 1);
+INSERT INTO `jp_bridge` VALUES (127, 'edec43ed199740e38257d5bd2d513823', '你可以呀', ' 屏蔽！--！', 1);
+INSERT INTO `jp_bridge` VALUES (128, '48d4588a06ea4b4c9c80abe180a8c2d9', '大学', ' 尼玛，上下铺！！！', 1);
+INSERT INTO `jp_bridge` VALUES (129, '22e307e9a3744ffaafcc4500a24d5715', '清华', ' 她是张诗琳爱的人', 1);
+INSERT INTO `jp_bridge` VALUES (130, '440957cdea274486bfb29f22383147b8', '清华大学', ' 壮哉！', 1);
+INSERT INTO `jp_bridge` VALUES (131, '6058e1291dcd4332b025273c2e448f93', '华中科技大学', ' 快樂是選擇', 1);
+INSERT INTO `jp_bridge` VALUES (132, '9f17ef57c0f5474fb58fc70ddf54c4d2', '胃病', NULL, 2);
+INSERT INTO `jp_bridge` VALUES (133, '05641dad8aaa425b80d960e87604f4c5', '你好', ' 我很好,你呢，你怎么样', 1);
+INSERT INTO `jp_bridge` VALUES (134, 'a5778d2303e44eadb36c31de60662eaa', '你又回来啦', ' 你老公等你好久了，还在等呢', 1);
+INSERT INTO `jp_bridge` VALUES (135, 'a76526ed553346579b13cd759b861997', '愚蠢', ' 汤匀麒', 1);
+INSERT INTO `jp_bridge` VALUES (136, 'f00c85a4f43441ba8a01e8bbcfeb59b0', '头痛', '目前看起來像是感冒，可以到耳鼻喉科了解更细部的资讯', 1);
+INSERT INTO `jp_bridge` VALUES (137, '8d7e0670afd74913a20633c42e5dbda0', '感冒', ' 快吃白加黑，白天服白片，晚上服黑片~不瞌睡，一吃就见效~', 1);
+INSERT INTO `jp_bridge` VALUES (138, '56a7393befe541049cae662ede87a82a', '嗓子不舒服', ' 啊，哪里不舒服，要不要去看医生啊', 1);
+INSERT INTO `jp_bridge` VALUES (139, 'f65f35029bb749fa938d0e9bdfa6fa4f', '切克闹', ' 奶罩内裤避孕套', 1);
+INSERT INTO `jp_bridge` VALUES (140, '695c51f1e5184959bb2acd8aed90e1b5', '不够好', ' 在那遥远的11区', 1);
+INSERT INTO `jp_bridge` VALUES (141, '349be0075e954a1cbcb7ebc8b8877744', '红楼梦', ' 开辟鸿蒙，谁为情种？都只为风月情浓。趁着这奈何天，伤怀日，寂寥时，试遣愚衷。因此上演出这怀金悼玉的《红楼梦》。', 1);
+INSERT INTO `jp_bridge` VALUES (142, '7ffea1147028468588aa1b6792d93655', '三国', ' 武虎将和修＞＜~', 1);
 
 SET FOREIGN_KEY_CHECKS = 1;

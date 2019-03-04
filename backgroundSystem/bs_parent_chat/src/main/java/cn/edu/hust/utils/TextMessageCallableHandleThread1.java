@@ -2,7 +2,6 @@ package cn.edu.hust.utils;
 
 import cn.edu.hust.bean.AccessToken;
 import cn.edu.hust.bean.TextMessage;
-import cn.edu.hust.serviceImpl.CustomerServiceImpl;
 
 import java.util.concurrent.Callable;
 
@@ -35,7 +34,7 @@ public class TextMessageCallableHandleThread1 implements Callable<String> {
         chatbotMessage=connectToChatbotUtil.getRespose(textMessage.getContent());
         AccessToken token = AccessTokenUtil.getAccessToken();
         //通过客服消息接口，返回机器人的回答
-        CustomerServiceImpl.connectWeiXinInterface(token,textMessage,chatbotMessage);
+        CustomerMessageInterfaceUtil.connectWeiXinInterface(token,textMessage,chatbotMessage);
 
         //将机器人的回答返回
         return chatbotMessage;

@@ -7,10 +7,11 @@ import java.io.InputStreamReader;
 public class ConnectToChatbotUtil {
     public String getRespose(String req) {
 
-        String python="E:\\GitHub\\demo\\Scripts\\python";
+        String python=PythonPropertyUtil.getProperty("pythonInterpreterPath");
+        String pythonScript=PythonPropertyUtil.getProperty("pythonScriptPath");
         String funcArg1=req;
 
-        String[] execArgs = new String[]{ python, "E:\\GitHub\\gongChengShiJian\\chatbot3_0\\test.py",funcArg1};
+        String[] execArgs = new String[]{ python,pythonScript,funcArg1};
 
         String result = "";
 
