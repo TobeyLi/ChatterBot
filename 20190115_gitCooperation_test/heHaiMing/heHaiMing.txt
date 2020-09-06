@@ -1,5 +1,0 @@
-java
-python
-c++
-java is the best language in the world.
-what do you think?
