@@ -28,7 +28,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1376" />
@@ -48,6 +48,11 @@
             <path>
               <item name="ChatterBot" type="b2602c69:ProjectViewProjectNode" />
               <item name="ChatterBot" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ChatterBot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ChatterBot" type="462c0819:PsiDirectoryNode" />
+              <item name="aics_rerank" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -128,15 +133,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1599409118975</updated>
-      <workItem from="1599409121380" duration="758000" />
+      <workItem from="1599409121380" duration="1133000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="758000" />
+    <option name="totallyTimeSpent" value="1133000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1376" height="744" extended-state="7" />
     <layout>
       <window_info anchor="right" id="Palette" />
       <window_info anchor="bottom" id="TODO" order="6" />
